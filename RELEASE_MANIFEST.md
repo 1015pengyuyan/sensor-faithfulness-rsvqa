@@ -5,7 +5,7 @@
 - Candidate tag: `v1.0.0-paper`
 - Candidate date: `2026-08-29`
 - Public push: not performed
-- Git content commit SHA: `c2101ba60cee1e90f93963c97142eca2e46db691`
+- Git content commit SHA: `9e95f71c1640d4432569216dbb5f506e169a891e`
 - Author order: `TODO` pending human confirmation
 - Repository URL: intentionally unset pending account/organization selection
 
@@ -35,5 +35,5 @@
 | Cross-dataset paper summary | `04752168a58831a5200dbdb1c4d7078b74950e8f359e293e3722e0906ac437a5` |
 | Robust-flip paper summary | `359cece0fb9fd0ae240af8293c2bd448ef4c9aa7223161b2507fc10a2eab4401` |
 
-The tag will be created locally after all checks pass. Public repository creation
-and push require separate human approval.
+The local annotated tag `v1.0.0-paper` points to the subsequent manifest-only
+commit. Public repository creation and push require separate human approval.

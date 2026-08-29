@@ -19,6 +19,7 @@
 ## Decision
 
 - Technical release state: `PUBLIC_RELEASE_TECHNICALLY_READY`
+- Local candidate tag: `v1.0.0-paper` (not pushed)
 - Current public-release state: `WAITING_FOR_HUMAN_METADATA_AND_PUSH_APPROVAL`
 
 The code and reproduction gates are ready. Before public publication, the human

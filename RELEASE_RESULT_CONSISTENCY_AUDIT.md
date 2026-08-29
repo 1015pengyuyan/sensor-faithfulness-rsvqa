@@ -19,7 +19,7 @@
 
 ## Automated checks
 
-- Standard-library core tests: 6/6 passed.
+- Standard-library core tests: 7/7 passed, including deterministic PDF reproduction.
 - CPU-only demo produces CIFR `0.8888888889`, RSR `0.1111111111`, and ASYM
   `0.3333333333`.
 - Paper consistency checker: five frozen hashes matched; six unique
@@ -35,11 +35,12 @@
 | `m4sar_summary.csv` | `deff96a798e93321490e56b3b26f5eeb3be460cb69c19c3aa628e299afc4dc4f` |
 | `bigearthnet_summary.csv` | `5efca6d293e7d348de2d042384f0b7316d02b21569c096bae4e5822840ea5347` |
 | `table3_reproduced.tex` | `a25d637f97cc487c2699fc82360b50ed73fc5fcb1f3635d33775ae266a364814` |
-| Figure 2 PDF | `bb8cf0ed784fdd5156c562af992a8e266ea08d7d830227e65b081064d544ed1b` |
-| Figure 3 PDF | `d1a07f7e90438d19ae4f4bb02748fb535c03f259e3bda50566c6350a38051958` |
+| Figure 2 PDF | `492f415c14904eb106d07840c0d3b5d8a7a8bb87cbba7016a82ab732ef3f610a` |
+| Figure 3 PDF | `2b9ce4919ca170953a81e7559fb755ad4c383506f81e55bd279665eb6bad8d60` |
 
-PDF/PNG byte hashes can vary across Matplotlib/font installations; the frozen
-numeric input hash and table values are the binding consistency checks.
+PDF artifacts are byte-stable under the pinned release environment because volatile
+CreationDate/ModDate metadata are omitted. Cross-environment font differences may
+still change rendering bytes; frozen numeric inputs and table values remain binding.
 
 ## Decision
 
