@@ -5,7 +5,7 @@
 - Candidate tag: `v1.0.0-paper`
 - Candidate date: `2026-08-29`
 - Public push: not performed
-- Git content commit SHA: `PENDING_LOCAL_RELEASE_COMMIT`
+- Git content commit SHA: `c2101ba60cee1e90f93963c97142eca2e46db691`
 - Author order: `TODO` pending human confirmation
 - Repository URL: intentionally unset pending account/organization selection
 
