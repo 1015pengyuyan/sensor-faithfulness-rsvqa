@@ -1,0 +1,17 @@
+datasets:
+  m4sar:
+    dataset_id: wchao0601/m4-sar
+    revision: e1609a2c7d2cacda10d4ad1e895df9627f37c236
+    license: CC-BY-4.0
+    released_here: metadata-only fixture; no images
+    official_test_used: false
+  bigearthnet_txt:
+    dataset_id: BIFOLD-BigEarthNetv2-0/BigEarthNet.txt
+    revision: 72d865f2146f0a85b720f7f3ca1cdbaeafc3d316
+    license: CDLA-Permissive-1.0
+    released_here: metadata-only fixture; no images
+  bigearthnet_v2:
+    source: https://doi.org/10.5281/zenodo.10891137
+    version: 2.0.0
+    license: CDLA-Permissive-1.0
+    released_here: no

@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering
+\caption{Cross-dataset counterfactual flip results. A0 accuracy is computed over requested-direction pairs. CIFR and RSR are computed among A0-correct source--direction pairs. Brackets give 95\% source-cluster bootstrap intervals for overall CIFR and ASYM; ASYM is SAR-requested minus optical-requested CIFR.}
+\label{tab:cross_dataset_cifr}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llcccccc}
+\toprule
+Dataset & Model & A0 Acc. & CIFR [95\% CI] & Opt. CIFR & SAR CIFR & ASYM [95\% CI] & RSR \\
+\midrule
+M4-SAR & Qwen2.5-VL-3B & 0.449 & \shortstack{0.120\\{\scriptsize [0.094, 0.148]}} & 0.032 & 0.232 & \shortstack{0.185\\{\scriptsize [0.133, 0.242]}} & 0.799 \\
+M4-SAR & EarthMind-4B & 0.568 & \shortstack{0.230\\{\scriptsize [0.197, 0.265]}} & 0.104 & 0.354 & \shortstack{0.195\\{\scriptsize [0.150, 0.242]}} & 0.770 \\
+M4-SAR & LLaVA-OneVision-7B & 0.542 & \shortstack{0.193\\{\scriptsize [0.159, 0.230]}} & 0.211 & 0.176 & \shortstack{-0.003\\{\scriptsize [-0.043, 0.034]}} & 0.807 \\
+BigEarthNet.txt (321) & Qwen2.5-VL-3B & 0.491 & \shortstack{0.238\\{\scriptsize [0.202, 0.274]}} & 0.024 & 0.432 & \shortstack{0.378\\{\scriptsize [0.303, 0.455]}} & 0.721 \\
+BigEarthNet.txt (321) & EarthMind-4B & 0.606 & \shortstack{0.272\\{\scriptsize [0.241, 0.305]}} & 0.042 & 0.497 & \shortstack{0.429\\{\scriptsize [0.368, 0.489]}} & 0.728 \\
+BigEarthNet.txt (321) & LLaVA-OneVision-7B & 0.475 & \shortstack{0.093\\{\scriptsize [0.068, 0.121]}} & 0.081 & 0.105 & \shortstack{0.018\\{\scriptsize [-0.025, 0.062]}} & 0.897 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}

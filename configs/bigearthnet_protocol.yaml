@@ -1,0 +1,18 @@
+dataset: bigearthnet_txt
+fixture: fixtures/bigearthnet/BIGEARTHNET_EXTERNAL_FULL_FIXTURE.jsonl
+fixture_sha256: 262ebdcc3b09da82ed4508cae7edce9235857b864acd81b2130078be51fda6cb
+rows: 2728
+source_clusters_total: 341
+source_clusters_primary_external: 321
+excluded_smoke_sources: metadata/BIGEARTHNET_SMOKE_EXCLUDED_SOURCES.csv
+image_order: optical_first_then_sar
+a0_condition: A0_CONGRUENT
+conflict_conditions:
+  - A2_OPPOSITE_1
+  - A3_1_OPPOSITE_2
+  - A3_2_OPPOSITE_3
+bootstrap:
+  unit: target_source_cluster
+  resamples: 10000
+  seed: 20260828
+official_test_used: false

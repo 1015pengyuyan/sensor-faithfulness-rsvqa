@@ -1,0 +1,201 @@
+source_id,split,class_id,class_name,target_label,target_density_bucket,target_complexity_bucket,target_total_area_bucket,target_n_objects,target_n_classes
+2422,evaluation,0,Bridge,no,low,low,high,2,1
+3137,evaluation,0,Bridge,no,low,low,low,1,1
+32171,evaluation,0,Bridge,no,low,low,low,1,1
+35330,evaluation,0,Bridge,no,low,low,low,2,1
+38022,evaluation,0,Bridge,no,mid,mid,high,5,2
+4282,evaluation,0,Bridge,no,low,low,low,1,1
+5361,evaluation,0,Bridge,no,low,mid,high,2,2
+58230,evaluation,0,Bridge,no,high,low,high,22,1
+68836,evaluation,0,Bridge,no,high,low,high,34,1
+71014,evaluation,0,Bridge,no,mid,low,mid,4,1
+71450,evaluation,0,Bridge,no,low,low,mid,1,1
+81610,evaluation,0,Bridge,no,low,low,mid,2,1
+82238,evaluation,0,Bridge,no,low,low,low,2,1
+89889,evaluation,0,Bridge,no,low,low,mid,3,1
+8994,evaluation,0,Bridge,no,low,low,low,1,1
+92393,evaluation,0,Bridge,no,high,low,high,10,1
+9410,evaluation,0,Bridge,no,low,low,low,1,1
+18423,evaluation,0,Bridge,yes,mid,low,low,5,1
+18611,evaluation,0,Bridge,yes,high,mid,high,23,2
+20467,evaluation,0,Bridge,yes,mid,mid,mid,5,2
+21549,evaluation,0,Bridge,yes,high,mid,mid,9,2
+23542,evaluation,0,Bridge,yes,low,low,low,2,1
+25405,evaluation,0,Bridge,yes,high,mid,high,11,2
+26603,evaluation,0,Bridge,yes,mid,mid,mid,4,2
+26794,evaluation,0,Bridge,yes,low,low,low,2,1
+34822,evaluation,0,Bridge,yes,mid,mid,mid,6,2
+36347,evaluation,0,Bridge,yes,mid,high,high,5,4
+6000,evaluation,0,Bridge,yes,mid,mid,low,4,2
+73615,evaluation,0,Bridge,yes,mid,mid,mid,7,2
+73827,evaluation,0,Bridge,yes,high,mid,high,11,2
+73915,evaluation,0,Bridge,yes,high,mid,mid,10,2
+77341,evaluation,0,Bridge,yes,mid,mid,mid,7,2
+77778,evaluation,0,Bridge,yes,mid,low,low,6,1
+90445,evaluation,0,Bridge,yes,mid,mid,mid,6,2
+12577,evaluation,1,Port,no,high,mid,mid,9,2
+13591,evaluation,1,Port,no,high,high,high,15,3
+24405,evaluation,1,Port,no,high,high,high,20,3
+34725,evaluation,1,Port,no,high,low,mid,12,1
+56272,evaluation,1,Port,no,low,low,low,1,1
+56588,evaluation,1,Port,no,mid,low,low,4,1
+60600,evaluation,1,Port,no,low,low,low,1,1
+63806,evaluation,1,Port,no,low,low,low,1,1
+65661,evaluation,1,Port,no,low,low,low,1,1
+66458,evaluation,1,Port,no,low,low,low,3,1
+66838,evaluation,1,Port,no,low,low,low,1,1
+680,evaluation,1,Port,no,mid,low,mid,7,1
+70025,evaluation,1,Port,no,low,low,low,3,1
+7646,evaluation,1,Port,no,low,low,low,1,1
+76929,evaluation,1,Port,no,low,low,high,2,1
+82992,evaluation,1,Port,no,low,low,low,2,1
+87375,evaluation,1,Port,no,low,low,low,2,1
+18465,evaluation,1,Port,yes,high,high,high,77,4
+21417,evaluation,1,Port,yes,high,high,high,20,4
+22510,evaluation,1,Port,yes,high,mid,mid,29,2
+22731,evaluation,1,Port,yes,mid,high,high,7,3
+27283,evaluation,1,Port,yes,low,low,mid,2,1
+29083,evaluation,1,Port,yes,mid,mid,high,6,2
+29394,evaluation,1,Port,yes,low,low,high,2,1
+36974,evaluation,1,Port,yes,low,low,low,1,1
+4014,evaluation,1,Port,yes,low,low,mid,2,1
+56597,evaluation,1,Port,yes,high,high,high,15,3
+57710,evaluation,1,Port,yes,mid,mid,high,6,2
+58369,evaluation,1,Port,yes,low,low,high,2,1
+63691,evaluation,1,Port,yes,low,low,mid,1,1
+64610,evaluation,1,Port,yes,low,low,high,1,1
+68108,evaluation,1,Port,yes,mid,high,high,5,3
+68178,evaluation,1,Port,yes,high,high,high,49,3
+7726,evaluation,1,Port,yes,low,low,mid,2,1
+12977,evaluation,2,Oil Tank,no,high,low,low,11,1
+19437,evaluation,2,Oil Tank,no,high,mid,mid,9,2
+20110,evaluation,2,Oil Tank,no,low,low,low,1,1
+20160,evaluation,2,Oil Tank,no,mid,mid,mid,4,2
+27035,evaluation,2,Oil Tank,no,low,low,low,1,1
+28149,evaluation,2,Oil Tank,no,mid,low,mid,4,1
+3093,evaluation,2,Oil Tank,no,mid,mid,mid,8,2
+39099,evaluation,2,Oil Tank,no,low,low,low,3,1
+61270,evaluation,2,Oil Tank,no,low,low,low,1,1
+61327,evaluation,2,Oil Tank,no,low,low,low,2,1
+63283,evaluation,2,Oil Tank,no,low,low,mid,3,1
+67246,evaluation,2,Oil Tank,no,high,mid,high,19,2
+68317,evaluation,2,Oil Tank,no,low,mid,mid,3,2
+68963,evaluation,2,Oil Tank,no,mid,high,high,8,3
+69278,evaluation,2,Oil Tank,no,high,low,mid,11,1
+87052,evaluation,2,Oil Tank,no,low,low,low,1,1
+91999,evaluation,2,Oil Tank,no,high,mid,mid,12,2
+11322,evaluation,2,Oil Tank,yes,high,low,mid,17,1
+12036,evaluation,2,Oil Tank,yes,high,mid,high,46,2
+12129,evaluation,2,Oil Tank,yes,high,low,mid,18,1
+20202,evaluation,2,Oil Tank,yes,high,mid,high,37,2
+23084,evaluation,2,Oil Tank,yes,high,low,high,128,1
+30618,evaluation,2,Oil Tank,yes,high,low,mid,19,1
+32450,evaluation,2,Oil Tank,yes,high,high,high,44,3
+35510,evaluation,2,Oil Tank,yes,high,mid,mid,11,2
+56575,evaluation,2,Oil Tank,yes,high,high,high,10,4
+68061,evaluation,2,Oil Tank,yes,high,high,high,29,3
+68248,evaluation,2,Oil Tank,yes,high,high,mid,24,3
+74526,evaluation,2,Oil Tank,yes,mid,mid,high,7,2
+83148,evaluation,2,Oil Tank,yes,high,high,high,13,3
+88482,evaluation,2,Oil Tank,yes,high,low,high,35,1
+88524,evaluation,2,Oil Tank,yes,high,high,high,34,3
+88992,evaluation,2,Oil Tank,yes,high,mid,high,71,2
+89104,evaluation,2,Oil Tank,yes,high,high,high,72,3
+11500,evaluation,3,Playground,no,high,mid,high,19,2
+11709,evaluation,3,Playground,no,high,mid,high,42,2
+13386,evaluation,3,Playground,no,high,low,high,17,1
+24150,evaluation,3,Playground,no,low,low,low,2,1
+26942,evaluation,3,Playground,no,mid,low,low,6,1
+31919,evaluation,3,Playground,no,low,low,high,2,1
+35828,evaluation,3,Playground,no,high,low,high,53,1
+36539,evaluation,3,Playground,no,mid,low,mid,4,1
+6285,evaluation,3,Playground,no,low,low,mid,1,1
+6894,evaluation,3,Playground,no,mid,low,mid,7,1
+71327,evaluation,3,Playground,no,mid,low,low,4,1
+75984,evaluation,3,Playground,no,low,mid,high,2,2
+82412,evaluation,3,Playground,no,low,low,low,2,1
+82904,evaluation,3,Playground,no,low,low,low,1,1
+87936,evaluation,3,Playground,no,low,low,low,1,1
+88419,evaluation,3,Playground,no,low,low,low,1,1
+88603,evaluation,3,Playground,no,high,mid,high,22,2
+13869,evaluation,3,Playground,yes,high,mid,mid,13,2
+20305,evaluation,3,Playground,yes,high,mid,mid,15,2
+27723,evaluation,3,Playground,yes,low,mid,mid,3,2
+4107,evaluation,3,Playground,yes,low,low,low,1,1
+4563,evaluation,3,Playground,yes,low,low,low,1,1
+5139,evaluation,3,Playground,yes,low,low,low,1,1
+62036,evaluation,3,Playground,yes,mid,mid,mid,5,2
+62250,evaluation,3,Playground,yes,mid,low,mid,4,1
+64392,evaluation,3,Playground,yes,low,low,low,1,1
+71757,evaluation,3,Playground,yes,low,low,low,2,1
+75216,evaluation,3,Playground,yes,high,mid,high,13,2
+76177,evaluation,3,Playground,yes,high,mid,high,15,2
+81187,evaluation,3,Playground,yes,mid,mid,mid,7,2
+82145,evaluation,3,Playground,yes,mid,mid,mid,8,2
+87252,evaluation,3,Playground,yes,mid,mid,mid,5,2
+91023,evaluation,3,Playground,yes,high,mid,mid,15,2
+93699,evaluation,3,Playground,yes,mid,mid,mid,5,2
+12738,evaluation,4,Airport,no,mid,high,high,6,3
+14913,evaluation,4,Airport,no,mid,mid,mid,4,2
+1640,evaluation,4,Airport,no,low,low,low,1,1
+25908,evaluation,4,Airport,no,mid,mid,mid,5,2
+28611,evaluation,4,Airport,no,mid,low,mid,6,1
+33121,evaluation,4,Airport,no,high,mid,high,12,2
+36204,evaluation,4,Airport,no,mid,mid,mid,6,2
+56183,evaluation,4,Airport,no,low,low,low,1,1
+63862,evaluation,4,Airport,no,low,low,low,1,1
+74109,evaluation,4,Airport,no,high,low,mid,20,1
+84059,evaluation,4,Airport,no,mid,mid,mid,4,2
+84540,evaluation,4,Airport,no,mid,mid,mid,8,2
+84960,evaluation,4,Airport,no,high,mid,mid,15,2
+86380,evaluation,4,Airport,no,mid,low,mid,4,1
+94633,evaluation,4,Airport,no,low,low,low,1,1
+94709,evaluation,4,Airport,no,low,low,low,3,1
+15459,evaluation,4,Airport,yes,mid,high,high,6,3
+23681,evaluation,4,Airport,yes,low,mid,high,3,2
+27408,evaluation,4,Airport,yes,low,low,high,1,1
+30350,evaluation,4,Airport,yes,low,mid,high,3,2
+37387,evaluation,4,Airport,yes,mid,mid,high,8,2
+60659,evaluation,4,Airport,yes,low,low,high,1,1
+64820,evaluation,4,Airport,yes,low,low,high,2,1
+6520,evaluation,4,Airport,yes,low,mid,high,2,2
+66973,evaluation,4,Airport,yes,mid,high,high,7,3
+71446,evaluation,4,Airport,yes,mid,mid,high,4,2
+80189,evaluation,4,Airport,yes,low,low,high,2,1
+87446,evaluation,4,Airport,yes,low,low,high,1,1
+87994,evaluation,4,Airport,yes,low,low,high,3,1
+8893,evaluation,4,Airport,yes,low,low,high,1,1
+8960,evaluation,4,Airport,yes,high,high,high,9,3
+94721,evaluation,4,Airport,yes,low,low,high,1,1
+14211,evaluation,5,Wind Turbine,no,low,low,low,1,1
+18338,evaluation,5,Wind Turbine,no,high,mid,mid,16,2
+27179,evaluation,5,Wind Turbine,no,mid,low,low,4,1
+27598,evaluation,5,Wind Turbine,no,mid,mid,mid,7,2
+28772,evaluation,5,Wind Turbine,no,high,mid,mid,14,2
+2878,evaluation,5,Wind Turbine,no,high,mid,mid,11,2
+31676,evaluation,5,Wind Turbine,no,high,mid,high,12,2
+38813,evaluation,5,Wind Turbine,no,low,low,mid,1,1
+62210,evaluation,5,Wind Turbine,no,mid,mid,mid,7,2
+65234,evaluation,5,Wind Turbine,no,mid,low,mid,5,1
+72127,evaluation,5,Wind Turbine,no,mid,low,mid,4,1
+84238,evaluation,5,Wind Turbine,no,mid,low,mid,5,1
+88039,evaluation,5,Wind Turbine,no,mid,low,mid,5,1
+90971,evaluation,5,Wind Turbine,no,mid,mid,mid,6,2
+92191,evaluation,5,Wind Turbine,no,mid,mid,mid,7,2
+94769,evaluation,5,Wind Turbine,no,low,low,low,1,1
+15004,evaluation,5,Wind Turbine,yes,high,low,mid,41,1
+17679,evaluation,5,Wind Turbine,yes,high,low,high,16,1
+2292,evaluation,5,Wind Turbine,yes,low,low,low,2,1
+33252,evaluation,5,Wind Turbine,yes,high,low,high,19,1
+33261,evaluation,5,Wind Turbine,yes,low,low,low,1,1
+35546,evaluation,5,Wind Turbine,yes,high,low,low,13,1
+36454,evaluation,5,Wind Turbine,yes,high,low,high,16,1
+57999,evaluation,5,Wind Turbine,yes,low,low,low,1,1
+58255,evaluation,5,Wind Turbine,yes,low,low,mid,3,1
+69241,evaluation,5,Wind Turbine,yes,high,low,high,16,1
+69825,evaluation,5,Wind Turbine,yes,mid,low,mid,8,1
+73476,evaluation,5,Wind Turbine,yes,high,low,mid,23,1
+75220,evaluation,5,Wind Turbine,yes,high,low,mid,29,1
+81962,evaluation,5,Wind Turbine,yes,low,low,low,1,1
+87757,evaluation,5,Wind Turbine,yes,high,low,mid,15,1
+89385,evaluation,5,Wind Turbine,yes,high,low,high,17,1

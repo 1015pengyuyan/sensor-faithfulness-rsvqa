@@ -1,0 +1,421 @@
+source_id,split,source_split,class_id,class_name,target_label,target_density_bucket,target_complexity_bucket,target_total_area_bucket,target_n_objects,target_n_classes
+91,evaluation,train,1,Port,no,low,low,low,2,1
+323,calibration,train,1,Port,no,low,low,mid,3,1
+846,evaluation,train,3,Playground,no,low,low,low,2,1
+910,evaluation,train,3,Playground,no,low,low,low,2,1
+1132,evaluation,train,3,Playground,yes,low,mid,low,2,2
+1263,evaluation,train,3,Playground,no,low,low,low,2,1
+1603,evaluation,train,1,Port,yes,mid,high,high,6,3
+1703,evaluation,train,5,Wind Turbine,yes,mid,low,low,5,1
+2191,evaluation,train,5,Wind Turbine,yes,low,low,mid,2,1
+2294,calibration,train,5,Wind Turbine,yes,high,low,high,17,1
+2318,evaluation,train,0,Bridge,no,mid,low,mid,7,1
+2708,calibration,train,4,Airport,no,low,low,low,1,1
+3261,evaluation,train,1,Port,yes,high,high,high,11,3
+3429,calibration,train,1,Port,yes,mid,mid,high,8,2
+3722,evaluation,train,4,Airport,no,low,low,low,1,1
+3880,evaluation,train,2,Oil Tank,no,mid,mid,low,5,2
+4052,evaluation,train,0,Bridge,no,high,low,mid,19,1
+4123,evaluation,train,1,Port,yes,low,low,high,1,1
+4408,evaluation,train,3,Playground,yes,mid,mid,mid,7,2
+4422,evaluation,train,3,Playground,yes,mid,low,mid,5,1
+4578,evaluation,train,2,Oil Tank,no,low,low,low,2,1
+4581,evaluation,train,2,Oil Tank,no,low,low,low,3,1
+4727,evaluation,train,4,Airport,yes,mid,mid,high,4,2
+4846,evaluation,train,5,Wind Turbine,no,mid,low,mid,7,1
+5588,evaluation,train,1,Port,yes,high,high,high,98,3
+6153,evaluation,train,1,Port,yes,low,low,mid,2,1
+6304,calibration,train,3,Playground,no,low,low,low,2,1
+6404,evaluation,train,4,Airport,yes,mid,mid,high,4,2
+6442,evaluation,train,1,Port,no,low,low,low,1,1
+6880,evaluation,train,3,Playground,no,low,low,low,1,1
+6997,calibration,train,3,Playground,yes,low,low,low,1,1
+7011,calibration,train,0,Bridge,yes,mid,low,mid,7,1
+7206,evaluation,train,3,Playground,no,low,low,low,1,1
+7222,evaluation,train,4,Airport,no,low,low,low,2,1
+7568,evaluation,train,0,Bridge,no,high,low,high,49,1
+7678,evaluation,train,2,Oil Tank,no,low,low,low,1,1
+7845,calibration,train,0,Bridge,no,low,low,low,1,1
+8614,calibration,train,1,Port,no,low,low,high,1,1
+8683,evaluation,train,1,Port,no,low,low,low,2,1
+8735,evaluation,train,4,Airport,yes,low,low,high,1,1
+9330,evaluation,train,0,Bridge,no,low,low,low,1,1
+9377,evaluation,train,4,Airport,no,low,low,low,1,1
+9876,calibration,train,3,Playground,no,high,low,high,26,1
+10611,evaluation,train,3,Playground,yes,low,low,low,1,1
+10671,evaluation,train,0,Bridge,yes,high,high,high,64,3
+10707,evaluation,train,4,Airport,no,mid,low,low,5,1
+10886,calibration,train,4,Airport,yes,mid,high,high,7,3
+11038,calibration,train,5,Wind Turbine,no,high,mid,high,18,2
+11422,calibration,train,5,Wind Turbine,no,high,mid,high,20,2
+11473,calibration,train,1,Port,no,mid,low,mid,4,1
+11551,evaluation,train,4,Airport,yes,low,mid,high,2,2
+11608,calibration,train,4,Airport,yes,mid,mid,high,8,2
+11776,evaluation,train,2,Oil Tank,yes,high,high,high,45,4
+11945,evaluation,train,4,Airport,no,low,low,low,3,1
+11950,calibration,train,1,Port,yes,high,mid,high,10,2
+11952,evaluation,train,3,Playground,no,low,low,low,3,1
+12141,evaluation,train,0,Bridge,no,low,low,mid,1,1
+12205,evaluation,train,2,Oil Tank,yes,high,high,high,15,3
+12264,evaluation,train,1,Port,yes,high,high,high,43,3
+12298,evaluation,train,3,Playground,no,mid,low,mid,8,1
+12896,calibration,train,1,Port,no,mid,mid,mid,7,2
+13147,evaluation,train,5,Wind Turbine,yes,high,low,mid,10,1
+13153,calibration,train,5,Wind Turbine,yes,mid,low,high,5,1
+13162,evaluation,train,5,Wind Turbine,yes,mid,low,low,4,1
+13258,calibration,train,3,Playground,yes,high,mid,high,21,2
+13400,calibration,train,5,Wind Turbine,yes,low,low,mid,3,1
+13432,evaluation,train,5,Wind Turbine,yes,high,high,high,11,3
+13733,evaluation,train,4,Airport,no,high,low,mid,10,1
+13892,evaluation,train,4,Airport,no,mid,high,high,4,3
+13957,evaluation,train,2,Oil Tank,no,mid,mid,mid,4,2
+14157,calibration,train,3,Playground,no,mid,low,low,5,1
+14299,evaluation,train,5,Wind Turbine,no,high,mid,mid,10,2
+14308,calibration,train,2,Oil Tank,no,high,mid,high,13,2
+14522,evaluation,train,0,Bridge,yes,mid,mid,mid,7,2
+14528,calibration,train,2,Oil Tank,no,mid,low,mid,8,1
+14603,evaluation,train,4,Airport,no,high,high,high,32,3
+14666,calibration,train,1,Port,no,low,low,low,1,1
+15251,evaluation,train,5,Wind Turbine,no,low,mid,low,3,2
+15276,evaluation,train,5,Wind Turbine,no,mid,mid,mid,5,2
+15277,evaluation,train,4,Airport,no,high,low,high,23,1
+15361,evaluation,train,0,Bridge,no,low,low,low,1,1
+15483,evaluation,train,2,Oil Tank,no,low,low,low,3,1
+15558,evaluation,train,3,Playground,no,high,mid,high,120,2
+15600,evaluation,train,4,Airport,yes,mid,high,high,8,3
+15666,evaluation,train,3,Playground,yes,high,mid,high,58,2
+15693,evaluation,train,5,Wind Turbine,no,high,mid,mid,11,2
+15790,evaluation,train,2,Oil Tank,yes,low,low,low,2,1
+15956,calibration,train,3,Playground,no,low,low,low,1,1
+16069,calibration,train,1,Port,no,mid,low,mid,8,1
+16524,evaluation,train,0,Bridge,yes,mid,mid,mid,7,2
+16609,evaluation,train,1,Port,no,high,mid,high,12,2
+17231,evaluation,train,4,Airport,no,low,mid,low,3,2
+17601,evaluation,train,5,Wind Turbine,yes,low,low,mid,3,1
+17642,calibration,train,1,Port,yes,low,low,mid,1,1
+17863,evaluation,train,2,Oil Tank,no,high,low,mid,10,1
+17979,evaluation,train,1,Port,no,low,low,low,1,1
+18150,calibration,train,0,Bridge,yes,high,mid,mid,12,2
+18169,evaluation,train,1,Port,no,high,mid,mid,16,2
+18439,calibration,train,1,Port,yes,mid,mid,high,7,2
+18495,calibration,train,2,Oil Tank,no,high,mid,high,20,2
+18726,evaluation,train,2,Oil Tank,no,mid,mid,mid,7,2
+18748,calibration,train,0,Bridge,no,mid,low,high,7,1
+18851,evaluation,train,0,Bridge,no,mid,low,mid,5,1
+19046,calibration,train,4,Airport,yes,low,mid,high,3,2
+19101,evaluation,train,1,Port,no,mid,low,mid,8,1
+19586,evaluation,train,3,Playground,yes,high,high,high,16,3
+19716,evaluation,train,4,Airport,yes,low,low,high,1,1
+19728,calibration,train,4,Airport,yes,high,mid,high,15,2
+19784,evaluation,train,4,Airport,yes,mid,high,high,8,3
+19785,evaluation,train,0,Bridge,yes,low,mid,low,2,2
+19968,evaluation,train,2,Oil Tank,yes,high,mid,high,56,2
+20234,evaluation,train,5,Wind Turbine,yes,mid,low,low,5,1
+20370,calibration,train,3,Playground,no,mid,low,mid,5,1
+20536,evaluation,train,3,Playground,yes,mid,mid,mid,5,2
+20590,evaluation,train,0,Bridge,yes,low,low,low,3,1
+20825,calibration,train,0,Bridge,no,low,low,low,1,1
+21154,evaluation,train,5,Wind Turbine,yes,high,low,mid,11,1
+21208,calibration,train,0,Bridge,yes,mid,mid,high,8,2
+21242,calibration,train,2,Oil Tank,no,mid,mid,mid,6,2
+21327,evaluation,train,0,Bridge,yes,mid,mid,mid,8,2
+21465,calibration,train,0,Bridge,yes,high,mid,high,23,2
+21468,evaluation,train,5,Wind Turbine,yes,high,low,mid,10,1
+21795,calibration,train,1,Port,yes,high,high,high,31,4
+21814,evaluation,train,2,Oil Tank,yes,high,high,mid,16,3
+21861,evaluation,train,0,Bridge,no,low,low,low,2,1
+21865,calibration,train,2,Oil Tank,yes,high,mid,mid,19,2
+21919,evaluation,train,5,Wind Turbine,yes,low,low,low,2,1
+22062,calibration,train,4,Airport,no,high,mid,low,10,2
+22410,evaluation,train,2,Oil Tank,no,high,mid,high,16,2
+22862,evaluation,train,1,Port,yes,low,low,mid,2,1
+23406,evaluation,train,5,Wind Turbine,no,high,mid,high,16,2
+23513,evaluation,train,0,Bridge,no,high,low,high,50,1
+23616,calibration,train,1,Port,no,mid,mid,mid,4,2
+23776,calibration,train,4,Airport,yes,mid,mid,high,8,2
+23856,calibration,train,2,Oil Tank,no,low,low,low,1,1
+24014,evaluation,train,0,Bridge,no,low,low,low,1,1
+24166,evaluation,train,3,Playground,yes,mid,mid,low,4,2
+24206,calibration,train,5,Wind Turbine,yes,low,low,low,1,1
+24241,evaluation,train,1,Port,yes,high,mid,high,16,2
+24287,evaluation,train,1,Port,no,mid,low,low,4,1
+24477,calibration,train,0,Bridge,yes,high,mid,high,14,2
+24544,evaluation,train,5,Wind Turbine,yes,high,low,mid,14,1
+24576,calibration,train,2,Oil Tank,yes,mid,low,low,6,1
+24752,calibration,train,5,Wind Turbine,no,mid,low,mid,5,1
+24817,evaluation,train,0,Bridge,no,high,low,mid,12,1
+25284,evaluation,train,4,Airport,no,low,low,mid,2,1
+25602,calibration,train,0,Bridge,no,mid,low,high,8,1
+25855,calibration,train,3,Playground,yes,mid,mid,mid,7,2
+25873,evaluation,train,5,Wind Turbine,yes,high,low,low,9,1
+26320,evaluation,train,4,Airport,yes,low,low,high,1,1
+26386,evaluation,train,4,Airport,no,low,low,low,3,1
+26540,evaluation,train,1,Port,no,mid,mid,low,4,2
+26561,evaluation,train,4,Airport,yes,mid,high,high,6,3
+27103,evaluation,train,1,Port,yes,low,low,mid,2,1
+27194,calibration,train,3,Playground,no,mid,low,low,5,1
+27230,evaluation,train,5,Wind Turbine,no,low,low,mid,3,1
+27317,evaluation,train,5,Wind Turbine,no,low,low,low,1,1
+27371,evaluation,train,3,Playground,no,low,low,low,1,1
+27394,evaluation,train,0,Bridge,yes,high,mid,high,13,2
+27962,calibration,train,0,Bridge,no,low,low,low,1,1
+27992,evaluation,train,3,Playground,yes,high,low,high,10,1
+28296,evaluation,validation,3,Playground,yes,low,mid,low,2,2
+28540,evaluation,validation,0,Bridge,no,low,low,low,1,1
+28559,calibration,validation,4,Airport,no,mid,low,low,5,1
+28641,evaluation,validation,2,Oil Tank,yes,high,high,high,37,4
+28821,evaluation,validation,1,Port,yes,high,mid,high,27,2
+29353,evaluation,validation,0,Bridge,yes,mid,low,mid,4,1
+29679,evaluation,validation,0,Bridge,yes,mid,low,low,5,1
+29790,evaluation,validation,1,Port,yes,low,low,high,1,1
+29941,evaluation,validation,5,Wind Turbine,no,low,mid,low,3,2
+30119,evaluation,validation,5,Wind Turbine,yes,high,low,mid,29,1
+30150,evaluation,validation,3,Playground,no,low,low,low,1,1
+30235,calibration,validation,2,Oil Tank,no,low,low,low,1,1
+30870,evaluation,validation,1,Port,no,low,low,low,2,1
+30969,evaluation,validation,0,Bridge,no,low,low,low,1,1
+31317,evaluation,validation,0,Bridge,no,low,low,low,2,1
+31697,evaluation,validation,3,Playground,no,high,low,high,95,1
+31907,evaluation,validation,4,Airport,yes,low,low,high,3,1
+32007,evaluation,validation,4,Airport,yes,low,low,high,1,1
+32360,evaluation,validation,0,Bridge,no,high,mid,high,21,2
+32427,evaluation,validation,4,Airport,no,high,high,high,71,3
+32496,evaluation,validation,2,Oil Tank,yes,high,high,high,43,3
+32503,calibration,validation,3,Playground,no,high,low,high,29,1
+32507,evaluation,validation,2,Oil Tank,yes,high,low,mid,9,1
+32579,calibration,validation,3,Playground,yes,low,low,low,1,1
+32712,evaluation,validation,0,Bridge,no,high,mid,high,26,2
+32744,evaluation,validation,2,Oil Tank,yes,high,high,high,39,4
+32794,evaluation,validation,2,Oil Tank,yes,high,high,mid,22,3
+32854,evaluation,validation,1,Port,yes,mid,mid,high,5,2
+32863,evaluation,validation,4,Airport,yes,mid,mid,high,8,2
+33242,evaluation,validation,2,Oil Tank,no,mid,mid,mid,7,2
+33742,evaluation,validation,5,Wind Turbine,no,low,low,low,2,1
+33789,evaluation,validation,4,Airport,yes,low,mid,high,3,2
+33810,evaluation,validation,5,Wind Turbine,no,mid,mid,high,6,2
+33925,evaluation,validation,3,Playground,yes,mid,mid,low,4,2
+34021,evaluation,validation,4,Airport,no,high,high,high,31,3
+34071,calibration,validation,2,Oil Tank,yes,high,low,high,62,1
+34450,evaluation,validation,3,Playground,no,mid,low,low,6,1
+34492,evaluation,validation,1,Port,no,low,mid,mid,3,2
+34578,evaluation,validation,3,Playground,no,mid,low,low,4,1
+34867,evaluation,validation,3,Playground,yes,high,mid,mid,10,2
+34924,evaluation,validation,5,Wind Turbine,yes,low,low,low,3,1
+34925,evaluation,validation,5,Wind Turbine,yes,mid,low,mid,7,1
+35115,evaluation,validation,4,Airport,no,mid,mid,mid,4,2
+35183,evaluation,validation,2,Oil Tank,no,high,low,mid,11,1
+35387,evaluation,validation,2,Oil Tank,yes,high,high,mid,24,3
+35431,evaluation,validation,2,Oil Tank,no,mid,low,low,5,1
+35938,evaluation,validation,1,Port,yes,high,mid,high,165,2
+36037,calibration,validation,5,Wind Turbine,yes,low,low,low,1,1
+36493,calibration,validation,0,Bridge,yes,high,mid,high,14,2
+36538,evaluation,validation,5,Wind Turbine,yes,mid,low,high,6,1
+37139,calibration,validation,2,Oil Tank,yes,high,mid,high,20,2
+37404,calibration,validation,2,Oil Tank,yes,mid,high,mid,7,3
+37512,evaluation,validation,2,Oil Tank,yes,mid,low,low,7,1
+37561,evaluation,validation,4,Airport,yes,low,high,high,3,3
+37816,calibration,validation,4,Airport,no,low,low,low,1,1
+37817,evaluation,validation,3,Playground,yes,high,mid,low,9,2
+38089,evaluation,validation,0,Bridge,yes,high,low,mid,10,1
+38157,calibration,validation,5,Wind Turbine,yes,high,low,low,10,1
+38305,evaluation,validation,1,Port,no,high,mid,high,17,2
+38648,calibration,validation,2,Oil Tank,no,low,low,low,2,1
+38865,evaluation,validation,5,Wind Turbine,no,mid,mid,mid,7,2
+38897,evaluation,validation,3,Playground,no,low,low,low,2,1
+38973,evaluation,validation,2,Oil Tank,no,high,low,mid,11,1
+56200,evaluation,train,1,Port,no,low,low,low,1,1
+56494,calibration,train,1,Port,yes,low,low,low,1,1
+56496,evaluation,train,2,Oil Tank,yes,mid,mid,high,6,2
+56540,evaluation,train,0,Bridge,no,mid,mid,high,6,2
+56803,calibration,train,3,Playground,yes,mid,mid,mid,7,2
+57252,calibration,train,4,Airport,no,low,low,low,1,1
+57911,evaluation,train,2,Oil Tank,no,low,low,mid,1,1
+57927,calibration,train,5,Wind Turbine,no,low,low,low,3,1
+58038,evaluation,train,1,Port,yes,mid,high,high,8,3
+58210,evaluation,train,5,Wind Turbine,no,low,low,low,3,1
+58279,evaluation,train,1,Port,no,low,low,low,3,1
+58698,calibration,train,5,Wind Turbine,yes,low,low,low,1,1
+58852,evaluation,train,5,Wind Turbine,no,high,mid,mid,11,2
+58892,evaluation,train,1,Port,no,low,low,low,2,1
+59257,evaluation,train,4,Airport,no,mid,low,low,4,1
+59311,evaluation,train,5,Wind Turbine,no,high,mid,high,23,2
+59721,calibration,train,3,Playground,yes,mid,mid,mid,7,2
+60154,calibration,train,5,Wind Turbine,no,mid,low,low,7,1
+60189,calibration,train,1,Port,yes,low,low,mid,1,1
+60315,evaluation,train,1,Port,yes,low,low,mid,1,1
+60814,calibration,train,4,Airport,yes,mid,mid,high,4,2
+61085,calibration,train,4,Airport,no,low,high,mid,3,3
+61602,calibration,train,0,Bridge,no,high,mid,high,43,2
+61702,evaluation,train,5,Wind Turbine,no,low,low,low,1,1
+61791,evaluation,train,1,Port,yes,low,low,high,1,1
+61807,evaluation,train,3,Playground,no,high,low,mid,10,1
+61918,evaluation,train,4,Airport,yes,low,low,high,1,1
+61940,evaluation,train,0,Bridge,yes,mid,low,low,5,1
+62070,evaluation,train,2,Oil Tank,no,mid,low,mid,6,1
+62164,calibration,train,0,Bridge,no,low,low,low,1,1
+62226,evaluation,train,3,Playground,yes,mid,mid,mid,4,2
+62348,evaluation,train,2,Oil Tank,no,mid,mid,high,6,2
+62498,evaluation,train,2,Oil Tank,no,low,low,low,1,1
+62541,evaluation,train,4,Airport,yes,low,mid,high,2,2
+62823,evaluation,train,4,Airport,no,low,low,mid,1,1
+62937,evaluation,train,0,Bridge,yes,low,low,low,3,1
+63079,evaluation,train,2,Oil Tank,yes,mid,low,low,6,1
+63295,evaluation,train,3,Playground,no,low,low,low,2,1
+63312,evaluation,train,5,Wind Turbine,no,low,low,low,1,1
+63534,evaluation,train,5,Wind Turbine,no,low,low,low,2,1
+64186,calibration,train,0,Bridge,no,low,low,low,1,1
+64461,calibration,train,3,Playground,no,low,low,low,1,1
+64980,evaluation,train,3,Playground,no,low,low,high,1,1
+65047,evaluation,train,4,Airport,yes,high,high,high,9,3
+65185,evaluation,train,4,Airport,yes,low,low,high,2,1
+65312,evaluation,train,3,Playground,yes,low,low,low,1,1
+65446,evaluation,train,5,Wind Turbine,no,low,low,mid,3,1
+65794,calibration,train,3,Playground,no,low,low,low,2,1
+66126,calibration,train,2,Oil Tank,yes,high,low,mid,32,1
+66286,evaluation,train,3,Playground,yes,low,low,low,1,1
+66546,evaluation,train,0,Bridge,no,low,low,low,1,1
+67005,evaluation,train,0,Bridge,no,low,low,high,1,1
+67038,evaluation,train,4,Airport,yes,mid,high,high,4,3
+67050,calibration,train,1,Port,yes,high,high,high,120,3
+67162,calibration,train,3,Playground,yes,high,mid,mid,9,2
+67217,evaluation,train,2,Oil Tank,yes,high,mid,high,27,2
+67410,evaluation,train,1,Port,no,mid,low,high,4,1
+67532,evaluation,train,3,Playground,no,low,low,low,1,1
+67536,evaluation,train,2,Oil Tank,yes,high,low,mid,26,1
+67542,evaluation,train,0,Bridge,no,low,low,low,1,1
+67722,evaluation,train,4,Airport,yes,high,mid,high,15,2
+67859,evaluation,train,4,Airport,yes,high,high,high,54,4
+67865,evaluation,train,0,Bridge,no,high,low,mid,32,1
+68060,evaluation,train,3,Playground,no,low,low,mid,3,1
+68138,evaluation,train,2,Oil Tank,yes,high,high,high,50,3
+68237,calibration,train,3,Playground,no,high,low,low,11,1
+68710,evaluation,train,5,Wind Turbine,no,high,high,high,54,4
+68816,evaluation,train,2,Oil Tank,yes,mid,low,low,7,1
+68886,evaluation,train,3,Playground,yes,high,mid,high,11,2
+69111,evaluation,train,2,Oil Tank,no,high,mid,high,14,2
+69470,evaluation,train,5,Wind Turbine,yes,low,low,low,1,1
+69489,calibration,train,5,Wind Turbine,yes,low,low,mid,2,1
+69559,calibration,train,5,Wind Turbine,yes,high,low,mid,15,1
+69586,evaluation,train,1,Port,no,high,mid,mid,9,2
+69691,evaluation,train,0,Bridge,no,mid,low,mid,5,1
+69891,evaluation,train,0,Bridge,yes,high,mid,mid,21,2
+70385,calibration,train,4,Airport,no,high,mid,mid,9,2
+70537,evaluation,train,1,Port,yes,mid,high,high,8,3
+70552,evaluation,train,2,Oil Tank,yes,high,mid,low,13,2
+70726,calibration,train,2,Oil Tank,yes,mid,low,low,8,1
+70755,evaluation,train,4,Airport,yes,low,low,high,1,1
+70786,calibration,train,4,Airport,no,high,low,mid,13,1
+70882,calibration,train,3,Playground,yes,mid,mid,mid,8,2
+71189,calibration,train,1,Port,yes,high,high,high,73,3
+71930,evaluation,train,5,Wind Turbine,no,low,low,low,1,1
+72044,evaluation,train,1,Port,no,mid,mid,high,6,2
+72181,calibration,train,5,Wind Turbine,yes,mid,low,low,5,1
+72917,evaluation,train,3,Playground,yes,high,mid,high,11,2
+73173,evaluation,train,5,Wind Turbine,yes,high,low,mid,20,1
+74316,evaluation,train,1,Port,no,mid,mid,mid,5,2
+74388,calibration,train,4,Airport,no,mid,mid,high,7,2
+74402,evaluation,train,2,Oil Tank,no,high,mid,high,19,2
+74534,evaluation,train,1,Port,yes,mid,mid,high,8,2
+74658,evaluation,train,0,Bridge,yes,high,mid,high,14,2
+74773,evaluation,train,1,Port,no,mid,low,low,4,1
+74915,evaluation,train,2,Oil Tank,yes,high,high,mid,21,3
+75293,evaluation,train,3,Playground,yes,high,mid,high,10,2
+75619,evaluation,train,2,Oil Tank,yes,low,low,low,2,1
+75991,evaluation,train,2,Oil Tank,yes,high,mid,mid,9,2
+76110,calibration,train,2,Oil Tank,yes,high,mid,mid,48,2
+76269,calibration,train,4,Airport,yes,mid,high,high,8,3
+76633,evaluation,train,0,Bridge,yes,mid,mid,mid,8,2
+76678,evaluation,train,4,Airport,no,high,mid,high,15,2
+77210,calibration,train,4,Airport,no,mid,high,mid,5,3
+77432,calibration,train,1,Port,no,low,low,low,2,1
+77556,evaluation,train,5,Wind Turbine,yes,high,low,mid,18,1
+77557,evaluation,train,5,Wind Turbine,yes,mid,low,mid,7,1
+77764,evaluation,train,1,Port,yes,low,low,mid,2,1
+78072,evaluation,train,4,Airport,no,mid,low,low,8,1
+78874,calibration,train,5,Wind Turbine,no,high,mid,mid,12,2
+78951,calibration,train,2,Oil Tank,yes,high,low,mid,26,1
+79103,evaluation,train,3,Playground,yes,high,high,high,15,3
+79266,calibration,train,0,Bridge,yes,high,high,high,18,3
+79407,evaluation,train,2,Oil Tank,yes,high,mid,high,31,2
+79513,evaluation,train,4,Airport,yes,low,low,high,1,1
+79866,evaluation,train,2,Oil Tank,yes,low,low,low,2,1
+79916,evaluation,train,3,Playground,no,mid,low,low,6,1
+80070,evaluation,train,2,Oil Tank,yes,high,high,high,10,3
+80135,evaluation,train,0,Bridge,yes,low,low,mid,1,1
+80491,evaluation,train,0,Bridge,no,low,low,low,1,1
+80661,evaluation,train,5,Wind Turbine,yes,high,low,mid,13,1
+80780,evaluation,train,3,Playground,yes,high,mid,high,13,2
+81247,calibration,train,4,Airport,yes,mid,mid,high,5,2
+81294,evaluation,train,4,Airport,yes,mid,high,high,5,3
+81362,evaluation,train,1,Port,yes,low,mid,high,2,2
+81472,evaluation,train,1,Port,yes,mid,mid,mid,7,2
+81995,evaluation,train,0,Bridge,yes,mid,mid,mid,5,2
+82491,evaluation,train,4,Airport,no,low,low,low,3,1
+82758,evaluation,train,4,Airport,yes,high,mid,high,34,2
+83281,calibration,train,0,Bridge,yes,mid,low,low,5,1
+83593,evaluation,train,2,Oil Tank,no,low,low,high,3,1
+83678,evaluation,train,4,Airport,no,low,mid,high,3,2
+83682,evaluation,train,0,Bridge,yes,low,low,low,1,1
+83725,evaluation,train,0,Bridge,yes,low,low,low,3,1
+83833,evaluation,train,1,Port,no,mid,mid,mid,6,2
+84210,calibration,validation,0,Bridge,no,low,low,low,2,1
+84514,evaluation,validation,3,Playground,no,low,low,low,1,1
+84643,calibration,validation,2,Oil Tank,no,low,low,low,1,1
+84917,calibration,validation,0,Bridge,no,high,mid,high,46,2
+85079,calibration,validation,1,Port,no,low,low,low,1,1
+85092,evaluation,validation,0,Bridge,yes,low,mid,low,2,2
+85132,evaluation,validation,3,Playground,yes,mid,mid,low,7,2
+85664,evaluation,validation,5,Wind Turbine,no,low,mid,high,3,2
+85781,evaluation,validation,0,Bridge,yes,low,low,low,1,1
+86216,evaluation,validation,4,Airport,no,low,low,high,1,1
+86331,evaluation,validation,3,Playground,yes,mid,mid,mid,7,2
+86850,calibration,validation,1,Port,no,low,low,low,1,1
+86971,calibration,validation,5,Wind Turbine,no,mid,mid,low,4,2
+87606,calibration,validation,2,Oil Tank,yes,high,high,high,35,4
+87868,calibration,validation,5,Wind Turbine,no,mid,low,mid,6,1
+87894,evaluation,validation,5,Wind Turbine,no,low,low,low,1,1
+88374,evaluation,validation,2,Oil Tank,no,low,low,low,2,1
+88535,evaluation,validation,1,Port,yes,high,high,high,10,3
+88617,evaluation,validation,0,Bridge,yes,low,low,low,1,1
+88651,calibration,validation,1,Port,yes,high,mid,high,22,2
+88891,calibration,validation,4,Airport,yes,low,low,high,1,1
+89031,evaluation,validation,0,Bridge,no,low,low,low,3,1
+89035,calibration,validation,3,Playground,yes,low,low,mid,2,1
+89289,evaluation,validation,5,Wind Turbine,yes,high,low,mid,10,1
+89326,evaluation,validation,1,Port,no,high,low,mid,20,1
+89336,evaluation,validation,5,Wind Turbine,yes,mid,low,mid,7,1
+89355,evaluation,validation,2,Oil Tank,no,high,mid,high,10,2
+89388,evaluation,validation,5,Wind Turbine,yes,mid,low,mid,5,1
+89997,evaluation,validation,0,Bridge,yes,mid,mid,low,5,2
+90107,evaluation,validation,4,Airport,no,high,high,high,33,4
+90230,calibration,validation,4,Airport,yes,mid,high,high,8,3
+90359,evaluation,validation,4,Airport,yes,low,mid,high,3,2
+90777,calibration,validation,3,Playground,yes,mid,low,mid,5,1
+90864,evaluation,validation,1,Port,no,mid,low,mid,6,1
+91438,calibration,validation,2,Oil Tank,no,mid,low,low,5,1
+91510,evaluation,validation,4,Airport,no,high,high,high,15,3
+91672,evaluation,validation,3,Playground,yes,mid,mid,mid,7,2
+91768,evaluation,validation,4,Airport,no,mid,low,low,8,1
+91863,evaluation,validation,2,Oil Tank,no,low,mid,low,2,2
+91871,evaluation,validation,3,Playground,no,low,low,mid,2,1
+92412,evaluation,validation,3,Playground,yes,mid,mid,mid,5,2
+92581,evaluation,validation,5,Wind Turbine,no,low,low,low,1,1
+92693,evaluation,validation,1,Port,yes,mid,mid,high,5,2
+92737,evaluation,validation,1,Port,yes,high,high,high,16,3
+92903,calibration,validation,5,Wind Turbine,no,mid,low,low,5,1
+92948,calibration,validation,2,Oil Tank,no,high,mid,mid,16,2
+93123,evaluation,validation,3,Playground,no,low,low,low,3,1
+93127,evaluation,validation,1,Port,no,high,mid,mid,10,2
+93410,evaluation,validation,1,Port,no,mid,low,mid,6,1
+93717,evaluation,validation,5,Wind Turbine,yes,high,low,mid,17,1
+94102,calibration,validation,0,Bridge,yes,high,mid,high,14,2
+94199,calibration,validation,0,Bridge,yes,low,low,low,1,1
+94245,evaluation,validation,5,Wind Turbine,yes,high,low,mid,15,1
+94447,evaluation,validation,3,Playground,no,low,low,mid,2,1
+94539,evaluation,validation,0,Bridge,yes,mid,mid,high,7,2
+94713,calibration,validation,5,Wind Turbine,no,low,low,mid,3,1
+94729,evaluation,validation,5,Wind Turbine,no,low,low,low,3,1
+94766,evaluation,validation,1,Port,yes,mid,mid,mid,4,2
+94893,evaluation,validation,0,Bridge,no,low,low,low,1,1
+95101,evaluation,validation,2,Oil Tank,no,mid,low,high,7,1
+95130,evaluation,validation,0,Bridge,yes,low,mid,mid,2,2

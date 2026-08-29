@@ -1,0 +1,44 @@
+# Local data and models
+data/
+models/
+checkpoints/
+cache/
+.cache/
+logs/
+outputs/raw/
+wandb/
+
+# Secrets and local configuration
+.env
+.env.*
+*.pem
+*.key
+credentials.*
+
+# Model weights and archives
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+*.zst
+*.7z
+
+# Generated runtime files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+slurm-*.out
+*.log
+
+# Editors and OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

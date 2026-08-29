@@ -1,0 +1,16 @@
+dataset: m4sar
+fixture: fixtures/m4sar/COUNTERFACTUAL_CONFIRMATORY_FIXTURE.jsonl
+fixture_sha256: 94b71c918476a266a901ee7d3430f16d3c104369c6ce29c1cce1a4e50555baef
+rows: 3360
+source_clusters: 420
+image_order: requested_first
+a0_condition: A0_CONGRUENT
+conflict_conditions:
+  - A2_CONFLICT
+  - A3_CONFLICT_REPLICATE_1
+  - A3_CONFLICT_REPLICATE_2
+bootstrap:
+  unit: target_source_cluster
+  resamples: 10000
+  seed: 20260828
+official_test_used: false

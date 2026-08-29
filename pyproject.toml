@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sensor-faithfulness-rsvqa"
+version = "1.0.0"
+description = "Counterfactual optical--SAR sensor-faithfulness evaluation for remote-sensing VQA"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "Apache-2.0"}
+authors = [{name = "TODO: final author list"}]
+dependencies = [
+  "numpy==1.26.4",
+  "pandas==2.3.3",
+  "Pillow==11.3.0",
+  "matplotlib==3.9.2",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

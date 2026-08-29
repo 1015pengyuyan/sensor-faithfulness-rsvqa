@@ -1,0 +1,4 @@
+model_id,revision,license,scientific_role
+Qwen/Qwen2.5-VL-3B-Instruct,66285546d2b821cf421d4f5eb2576359d3770cd3,Qwen-Research,general VLM control
+sy1998/EarthMind-4B,f17c66b01e540268f3862a540e84a3f7ee329cd3,Apache-2.0,multi-sensor EO model
+llava-hf/llava-onevision-qwen2-7b-ov-hf,0d50680527681998e456c7b78950205bedd8a068,Apache-2.0,independent general multi-image architecture control

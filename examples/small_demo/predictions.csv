@@ -1,0 +1,17 @@
+fixture_id,raw_output
+s1_o_a0,no
+s1_o_a2,yes
+s1_o_a31,yes
+s1_o_a32,no
+s1_s_a0,no
+s1_s_a2,yes
+s1_s_a31,yes
+s1_s_a32,yes
+s2_o_a0,yes
+s2_o_a2,no
+s2_o_a31,no
+s2_o_a32,no
+s2_s_a0,no
+s2_s_a2,no
+s2_s_a31,no
+s2_s_a32,no

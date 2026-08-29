@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
+  <title id="title">Requested-sensor counterfactual protocol</title>
+  <desc id="desc">The requested image, question, and gold answer stay fixed while only non-requested evidence changes from congruent to opposite.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#333"/></marker>
+    <style>
+      .t{font:600 24px Arial,sans-serif;fill:#222}.b{font:19px Arial,sans-serif;fill:#222}.s{font:16px Arial,sans-serif;fill:#444}
+      .box{rx:14;ry:14;stroke-width:2}.fixed{fill:#e6f2ff;stroke:#0072b2}.cong{fill:#e8f5e9;stroke:#2e7d32}.opp{fill:#fff0e6;stroke:#d55e00}.metric{fill:#f3e8ff;stroke:#7b2cbf}
+    </style>
+  </defs>
+  <text x="600" y="38" text-anchor="middle" class="t">Requested evidence is invariant; only non-requested evidence is intervened on</text>
+  <rect x="35" y="85" width="300" height="230" class="box fixed"/>
+  <text x="185" y="125" text-anchor="middle" class="t">Fixed target</text>
+  <text x="65" y="170" class="b">Requested sensor image</text>
+  <text x="65" y="205" class="b">Question semantics</text>
+  <text x="65" y="240" class="b">Gold yes/no label</text>
+  <text x="65" y="280" class="s">Unchanged across A0/A2/A3</text>
+  <line x1="335" y1="200" x2="405" y2="200" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="420" y="75" width="310" height="125" class="box cong"/>
+  <text x="575" y="115" text-anchor="middle" class="t">A0 congruent</text>
+  <text x="450" y="155" class="b">Non-requested evidence</text>
+  <text x="450" y="182" class="s">supports the target label</text>
+  <rect x="420" y="225" width="310" height="150" class="box opp"/>
+  <text x="575" y="265" text-anchor="middle" class="t">A2 / A3-1 / A3-2</text>
+  <text x="450" y="305" class="b">Independent non-requested</text>
+  <text x="450" y="333" class="b">opposite-label evidence</text>
+  <text x="450" y="360" class="s">selected from dataset labels, not outputs</text>
+  <line x1="730" y1="200" x2="800" y2="200" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="815" y="85" width="350" height="230" class="box metric"/>
+  <text x="990" y="125" text-anchor="middle" class="t">A0-correct analysis</text>
+  <text x="850" y="170" class="b">CIFR: flip to opposite label</text>
+  <text x="850" y="207" class="b">RSR: retain target label</text>
+  <text x="850" y="244" class="b">ASYM: SAR CIFR - optical CIFR</text>
+  <text x="850" y="282" class="s">replicates pooled within source</text>
+  <text x="600" y="405" text-anchor="middle" class="s">Bootstrap unit: target source cluster; three opposite distractors are never treated as independent samples.</text>
+</svg>

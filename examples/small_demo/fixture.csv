@@ -1,0 +1,17 @@
+fixture_id,source_id,requested_sensor,condition_id,target_label,distractor_label
+s1_o_a0,s1,optical,A0,no,yes
+s1_o_a2,s1,optical,A2,no,yes
+s1_o_a31,s1,optical,A3-1,no,yes
+s1_o_a32,s1,optical,A3-2,no,yes
+s1_s_a0,s1,sar,A0,no,yes
+s1_s_a2,s1,sar,A2,no,yes
+s1_s_a31,s1,sar,A3-1,no,yes
+s1_s_a32,s1,sar,A3-2,no,yes
+s2_o_a0,s2,optical,A0,yes,no
+s2_o_a2,s2,optical,A2,yes,no
+s2_o_a31,s2,optical,A3-1,yes,no
+s2_o_a32,s2,optical,A3-2,yes,no
+s2_s_a0,s2,sar,A0,yes,no
+s2_s_a2,s2,sar,A2,yes,no
+s2_s_a31,s2,sar,A3-1,yes,no
+s2_s_a32,s2,sar,A3-2,yes,no

@@ -1,0 +1,60 @@
+{
+  "version": "bigearthnet_external_render_v1",
+  "frozen_at_utc": "2026-08-20T07:59:26.373687+00:00",
+  "applies_to": "all models and all BigEarthNet external fixture rows",
+  "no_model_result_tuning": true,
+  "output": {
+    "format": "PNG",
+    "dtype": "uint8",
+    "resolution": [
+      512,
+      512
+    ],
+    "image_order_for_dual_image_prompt": [
+      "optical",
+      "sar"
+    ],
+    "resize_interpolation": "bicubic_for_s2_rgb; bilinear_for_s1_sar"
+  },
+  "sentinel_2_optical": {
+    "source": "BigEarthNet v2.0 Sentinel-2 Level-2A patch",
+    "bands": {
+      "R": "B04",
+      "G": "B03",
+      "B": "B02"
+    },
+    "input_scale_assumption": "reflectance digital numbers scaled by 10000",
+    "clipping": {
+      "type": "fixed_physical_range",
+      "lower": 0,
+      "upper": 3000
+    },
+    "transform": "clip band to [0,3000], divide by 3000, multiply by 255, round, cast uint8",
+    "normalization": "none after uint8 rendering; model processor may apply its fixed preprocessing"
+  },
+  "sentinel_1_sar": {
+    "source": "BigEarthNet v2.0 Sentinel-1 patch",
+    "source_bands": [
+      "VV",
+      "VH"
+    ],
+    "domain": "dB, as indicated by negative VV/VH training means in BigEarthNet.txt datamodule",
+    "clipping": {
+      "VV": [
+        -25,
+        0
+      ],
+      "VH": [
+        -32,
+        -5
+      ]
+    },
+    "channel_mapping": {
+      "R": "VV clipped to [-25,0] then scaled to [0,255]",
+      "G": "VH clipped to [-32,-5] then scaled to [0,255]",
+      "B": "0.5 * scaled_VV + 0.5 * scaled_VH, rounded to uint8"
+    },
+    "normalization": "none after uint8 rendering; model processor may apply its fixed preprocessing"
+  },
+  "random_seed": 20260820
+}

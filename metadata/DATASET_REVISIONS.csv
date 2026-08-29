@@ -1,0 +1,4 @@
+dataset,revision_or_version,license,source
+M4-SAR,e1609a2c7d2cacda10d4ad1e895df9627f37c236,CC-BY-4.0,wchao0601/m4-sar
+BigEarthNet.txt,72d865f2146f0a85b720f7f3ca1cdbaeafc3d316,CDLA-Permissive-1.0,BIFOLD-BigEarthNetv2-0/BigEarthNet.txt
+BigEarthNet v2,2.0.0,CDLA-Permissive-1.0,doi:10.5281/zenodo.10891137
