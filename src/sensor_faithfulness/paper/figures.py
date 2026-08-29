@@ -49,7 +49,7 @@ def _select(rows, dataset_prefix: str, model: str):
 
 def _save(fig, output_dir: Path, stem: str) -> None:
     output_dir.mkdir(parents=True, exist_ok=True)
-    fig.savefig(output_dir / f"{stem}.pdf")
+    fig.savefig(output_dir / f"{stem}.pdf", metadata={"CreationDate": None, "ModDate": None})
     fig.savefig(output_dir / f"{stem}.png")
     plt.close(fig)
 

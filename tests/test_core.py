@@ -1,3 +1,5 @@
+import tempfile
+import time
 import unittest
 from pathlib import Path
 
@@ -8,6 +10,7 @@ from sensor_faithfulness.data.prompt_protocol import build_user_prompt, ordered_
 from sensor_faithfulness.data.render_bigearthnet import render_s1_arrays, render_s2_arrays
 from sensor_faithfulness.evaluation.metrics import bootstrap_metrics, compute_metrics, robust_flip_rate
 from sensor_faithfulness.evaluation.parser import parse_answer
+from sensor_faithfulness.paper.figures import reproduce_figure2
 from sensor_faithfulness.paper.reproduce import load_frozen_summary, table3_rows
 
 
@@ -105,6 +108,17 @@ class CoreTests(unittest.TestCase):
         self.assertEqual(qwen["overall_cifr"], 0.12024756852343059)
         self.assertEqual(qwen["asym"], 0.18518518518518517)
 
+
+    def test_pdf_reproduction_is_byte_deterministic(self):
+        summary = ROOT / "results" / "paper_summary" / "cross_dataset_summary.csv"
+        with tempfile.TemporaryDirectory() as first, tempfile.TemporaryDirectory() as second:
+            reproduce_figure2(summary, Path(first))
+            time.sleep(1.1)
+            reproduce_figure2(summary, Path(second))
+            self.assertEqual(
+                (Path(first) / "figure2_cross_dataset_cifr.pdf").read_bytes(),
+                (Path(second) / "figure2_cross_dataset_cifr.pdf").read_bytes(),
+            )
 
 if __name__ == "__main__":
     unittest.main()
