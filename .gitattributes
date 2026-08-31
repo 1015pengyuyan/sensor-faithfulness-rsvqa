@@ -1,0 +1,3 @@
+configs/bigearthnet_rendering.json -text
+results/paper_summary/cross_dataset_summary.csv -text
+results/paper_summary/robust_flip_results.csv -text
