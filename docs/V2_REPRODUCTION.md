@@ -60,6 +60,11 @@ replicate aggregation, eligibility and percentile definitions. The original
 source hash is recorded in its header. Saved source multiplicities are shared
 across models; zero-denominator draws remain invalid and are counted, not redrawn.
 No tail precision is created by replaying these arrays.
+`robust_metrics.py` preserves the post-hoc family-tail, saved-draw ratio and
+requested-only event definitions. The original robustness, position and final
+closeout specifications are in `configs/v2/robustness.json`, `position.json` and
+`position_closeout.json`, each linked to its original source hash. Operational
+archive locations in these definition records are redacted, not executable paths.
 
 ## Data acquisition and fixture reconstruction
 

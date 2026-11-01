@@ -1,0 +1,137 @@
+{
+  "version": "v13_phase1_position_analysis_20261028_v1",
+  "analysis_class": "posthoc_retrospective_supplement",
+  "dataset": "BigEarthNet.txt",
+  "protocol": "unified_matrix_128_eight_model_20261018_v1",
+  "scientific_predictions_only": true,
+  "exclude_replay_calls": true,
+  "planned_position_fixture_rows": 2998,
+  "source_cluster_key": "target_patch_id",
+  "paired_key": [
+    "target_id",
+    "requested_sensor",
+    "condition_id"
+  ],
+  "main_alternative_input_equivalence": {
+    "required_immutable_fields": [
+      "target_id",
+      "target_patch_id",
+      "target_source_cluster_id",
+      "target_label",
+      "class_id",
+      "class_name",
+      "condition_id",
+      "condition_relation",
+      "requested_sensor",
+      "question_norm",
+      "question_text",
+      "gold_answer",
+      "system_prompt",
+      "distractor_source",
+      "distractor_label",
+      "opposite_gold_answer"
+    ],
+    "allowed_changes": [
+      "fixture_id",
+      "source_fixture_id",
+      "image_order",
+      "image_refs",
+      "position_role",
+      "requested_image_position",
+      "requested_position",
+      "user_prompt"
+    ],
+    "image_validation": "same file SHA/path/source/role set, exact reverse of ordered image list, and requested/non-requested semantic roles retained",
+    "prompt_validation": "normalize Image 1/2 to REQUESTED/NONREQUESTED by fixture role; normalized user text and system text must match exactly",
+    "source_fixture_id_semantics": "In Alternative rows source_fixture_id is a bookkeeping pointer to its paired Main fixture_id; Main rows retain their pre-existing source_fixture_id. This pointer is not passed to the model and does not alter prompt, label, condition, or image content. Validate Alternative pointer against the frozen pair map."
+  },
+  "position_mapping": {
+    "BigEarthNet_Main": {
+      "optical": "slot_1",
+      "sar": "slot_2"
+    },
+    "BigEarthNet_Alternative": {
+      "optical": "slot_2",
+      "sar": "slot_1"
+    },
+    "estimand_sign": "slot_2_minus_slot_1",
+    "interpretation": "joint change in ordered image placement and its mechanically updated positional wording; not a wording-free intervention"
+  },
+  "analysis_units": {
+    "full_A0_ability": "all assigned target-question x requested-sensor A0 rows; abstention and parser failure count incorrect",
+    "conditional_position_contrast": "target-question x requested-sensor is eligible only when its A0 prediction is correct in both positions",
+    "sensor_position_interaction": "same target question is eligible only when A0 is correct in all four sensor x slot cells",
+    "second_congruent_contrast": "frozen C1-assigned questions only; opposite reverse-response probability minus the second-congruent reverse-response indicator; same source/question across paired positions",
+    "replicates": "the three opposite replicates are averaged within question x sensor x slot before pooling",
+    "replay": "excluded from scientific denominators and all estimates"
+  },
+  "estimands": {
+    "CIFR": "among A0-correct opportunities, mean over three opposite replicates of indicator(parsed_answer == opposite_gold); parser failures and abstentions remain in denominator and are separately reported, but are not reverse answers",
+    "RSR": "among A0-correct opportunities, mean over three opposite replicates of indicator(parsed_answer == target_gold); parser failures and abstentions remain in denominator and are separately reported",
+    "C1_reverse": "among frozen C1-assigned A0-correct opportunities, indicator(parsed_C1_answer == opposite_gold)",
+    "D": "CIFR minus C1_reverse on the frozen C1-assigned subset",
+    "position_effect": "paired slot_2 minus slot_1 endpoint within the question-level common-A0-correct set",
+    "sensor_by_position_interaction": "(SAR slot_2 - SAR slot_1) - (optical slot_2 - optical slot_1), within the four-cell common-A0-correct set"
+  },
+  "bootstrap": {
+    "resamples": 10000,
+    "seed": 20261016,
+    "reuse_existing_draw_files": true,
+    "resampling_unit": "physical target source; all eligible questions from each sampled source travel together",
+    "point_weighting": "question x requested-sensor weighted; source clustering affects uncertainty only",
+    "interval": "pointwise 95% percentile, linear/type-7 quantiles, matching frozen BEN analysis",
+    "zero_denominator": "invalid draws retained as NaN and counted; no redraw or replacement",
+    "common_draws": "same saved draw matrix shared by models within each cohort"
+  },
+  "cohorts": {
+    "primary": {
+      "questions": 321,
+      "physical_sources": 282
+    },
+    "source_exclusion_sensitivity": {
+      "questions": 313,
+      "physical_sources": 275,
+      "rule": "exclude frozen seven physical sources from BIGEARTHNET_SENSITIVITY_EXCLUSIONS.csv"
+    },
+    "C1_primary": {
+      "questions": 215,
+      "physical_sources": 195
+    },
+    "C1_source_exclusion_sensitivity": {
+      "questions": 209,
+      "physical_sources": 189
+    }
+  },
+  "multiplicity": {
+    "families": {
+      "core_position_effects": "all four core models x optical/SAR x CIFR, RSR, and D position contrasts",
+      "core_sensor_position_interactions": "all four core models x CIFR and D interaction endpoints",
+      "legacy_cross_run_supplement": "Qwen2.5-VL-3B and Mantis endpoints kept separate from the core family"
+    },
+    "method": "report all prespecified endpoints with pointwise intervals and denominators; no multiplicity-adjusted significance claims are made for this post-hoc supplement"
+  },
+  "model_groups": {
+    "core_same_followup_main_alternative": [
+      "idefics2_8b",
+      "qwen25_vl_7b",
+      "qwen3_vl_8b",
+      "internvl35_8b"
+    ],
+    "legacy_main_plus_alternative_eligible_only_if_bridge_and_identity_pass": [
+      "qwen25_vl_3b",
+      "mantis_siglip_llama3_8b"
+    ],
+    "cross_run_pairing_gate": "Require full Main/Alternative target×requested_sensor×condition key coverage, matching model revision/config/parser/generation and native adapter identity, plus frozen 20-input bridge raw+parsed+runtime+ordered-ID agreement. The bridge demonstrates only those 20 inputs, not full-run output stability; any failed gate leaves position-specific results only.",
+    "legacy_main_plus_alternative_expected_not_eligible_without_frozen_bridge": [
+      "llava_onevision_7b"
+    ]
+  },
+  "limitations": [
+    "retrospective, previously exposed fixed BEN targets and distractor allocation",
+    "source clusters are target patches, not certified independent parent scenes or geographic units",
+    "the position presentation changes both ordered image slots and the mechanically updated slot references",
+    "20-row bridge agreement supports cross-run comparability for the bridge subset only, not full-run output stability",
+    "Qwen3 and InternVL Main original route-audit FAIL states remain unchanged; independent saved-output supplemental receipts are linked"
+  ],
+  "original_source_sha256": "a0c2c4ccb219442722e41406d7997201aa1a74910569ddfe74e62ca923bfd9bb"
+}

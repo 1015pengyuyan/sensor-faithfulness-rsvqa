@@ -1,0 +1,19 @@
+{
+  "version": "eight_model_cpu_robustness_20261026_v1",
+  "status": "POSTHOC_ROBUSTNESS_DEFINED_AFTER_RESULTS",
+  "original_package": "../eight_model_cpu_analysis_20261026_v1",
+  "family_size": 32,
+  "family_alpha": 0.05,
+  "interval_method": "Bonferroni-expanded marginal percentile bootstrap; approximate nominal family coverage, not exact finite-sample coverage",
+  "quantile_method": "linear",
+  "primary_family": "all eight models x two datasets x two sensors at frozen main interface; primary cohort only",
+  "requested_only_eligibility": "A0 correct AND same target-question/sensor requested-only correct AND frozen second-congruent exists",
+  "sensitivity_intervals": "pointwise 95%, posthoc, not multiplicity-adjusted; all positions retained",
+  "saved_resamples": 10000,
+  "new_source_draws": 0,
+  "invalid_policy": "NaN retained and counted; no redraw",
+  "new_inference": 0,
+  "earthmind_requested_only": "NOT_APPLICABLE_NATIVE_NAMED_BRANCH",
+  "source_audit_scope": "local permitted metadata only; no protected contents or network access",
+  "original_source_sha256": "b2061a015e193eaff8656ecdc1a0a32793818ffa8da641a8e6f679931dfc02eb"
+}
