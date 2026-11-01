@@ -1,0 +1,20 @@
+[
+  {
+    "file": "build_displays.py",
+    "source_sha256": "9fb0f4c874115da5aa7439ded16fe6c447d360166ed68ea20a484eb0c4d97bb4",
+    "public_sha256": "d3916f0d7ada13547c8534281c98d1a93953e82f86eb311595ff4f54d118133f",
+    "changes": "HERE/DATA/FIG/QA configuration only; all function ASTs identical"
+  },
+  {
+    "file": "build_figures.py",
+    "source_sha256": "9b6947877ccd441ce44937a36ef17baa4f7fe919122f2ac0171b399c00f5ae86",
+    "public_sha256": "b8a73dbef95553b7a251ef364481603d4b345c6b579d78a8a1beae026b9a14ad",
+    "changes": "HERE/DATA/FIG/QA configuration only; all function ASTs identical"
+  },
+  {
+    "file": "build_v14_displays.py",
+    "source_sha256": "047a8cdb4db2aab74b2cf7882fc85f293bf62da50e2facd251bb8d82f48b04cb",
+    "public_sha256": "5c7fd3823f4d794408c6bfcafe808a245a2417060a58bb665127270bd4d21779",
+    "changes": "HERE/DATA/FIG/QA configuration only; all function ASTs identical"
+  }
+]

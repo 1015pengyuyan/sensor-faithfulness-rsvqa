@@ -1,0 +1,14 @@
+{
+  "main_matrix": {"stages": 16, "scientific_condition_inputs": 139092, "replay_calls": 416, "total_calls": 139508},
+  "position_v8_v9": {"stages": 10, "scientific_condition_inputs": 29980, "replay_calls": 260, "total_calls": 30240},
+  "earlier_llava_corrected_alternative": {"stages": 1, "scientific_condition_inputs": 2998, "replay_calls": 26, "total_calls": 3024, "paired_position_inference": "not authenticated"},
+  "archived_cross_run_bridges": {"qwen25_vl_3b_calls": 20, "mantis_calls": 20, "scientific_samples": 0},
+  "sampling_units": {
+    "m4": {"questions": 420, "physical_target_sources": 420},
+    "bigearthnet_primary": {"questions": 321, "physical_target_sources": 282},
+    "bigearthnet_exclusion": {"questions": 313, "physical_target_sources": 275},
+    "bigearthnet_C1": {"questions": 215, "physical_target_sources": 195},
+    "bigearthnet_C1_exclusion": {"questions": 209, "physical_target_sources": 189}
+  },
+  "warning": "Do not add reused historical Main rows again, treat calls as independent sources, or count replay/bridge as scientific samples."
+}

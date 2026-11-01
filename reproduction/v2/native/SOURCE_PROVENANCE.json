@@ -1,0 +1,106 @@
+[
+  {
+    "public_file": "qwen_technical_adapter.py",
+    "original_basename": "qwen_technical_adapter.py",
+    "original_sha256": "745e0a89d4fb310a41ab18fe20d6148f3dd66bd689ead87c0ea0a9351427cd6c",
+    "public_sha256": "1e6a08c2c08d2dbff641da946fb8ab8843cc4450381cf90a2261aac55cadf900",
+    "changes": "support-module discovery only; scientific methods unchanged",
+    "ast_method_identity": true
+  },
+  {
+    "public_file": "qwen_frozen_runner.py",
+    "original_basename": "run_cross_sensor_vqa_inference.py",
+    "original_sha256": "483885b84d1f6026ea5305002c8ebd8a508c24c4e23580acdecf9b254c9f3139",
+    "public_sha256": "211c8078ab7b3433ff9d05f3292c7d3ee7693583ad880dd27271c560a94eebc9",
+    "changes": "support-module discovery only; scientific methods unchanged",
+    "ast_method_identity": true
+  },
+  {
+    "public_file": "native_earthmind_128.py",
+    "original_basename": "native_earthmind_128.py",
+    "original_sha256": "9ef3dd742e17f9e10d4e1edec54f67a576585f5b8fbb6a862d759bbee5f762a1",
+    "public_sha256": "772c1ff7008c932bc5360be24a9f53909f189affffb841b6e416779593797b5e",
+    "changes": "support-module discovery only; scientific methods unchanged",
+    "ast_method_identity": true
+  },
+  {
+    "public_file": "native_mantis_128.py",
+    "original_basename": "native_mantis_128.py",
+    "original_sha256": "1b6551d3f29b8d66814342e907c0c74216f6e3eedd66ca7c3bda7ebb966da45a",
+    "public_sha256": "e3452c464094f7979365e78488d5494ad0286bd723bff35a6f8998fc985c390e",
+    "changes": "support-module discovery only; scientific methods unchanged",
+    "ast_method_identity": true
+  },
+  {
+    "public_file": "native_qwen25vl7b_128.py",
+    "original_basename": "native_qwen25vl7b_128.py",
+    "original_sha256": "c8c0e5a177145e63074f0b50ff4abc2e2464ee2328cba6710039b5fb05eb3552",
+    "public_sha256": "1cc2dc0f48cc62869a824367ca528c12b9fcdc4e6b3d912c51f30d87980240c5",
+    "changes": "support-module discovery only; scientific methods unchanged",
+    "ast_method_identity": true
+  },
+  {
+    "public_file": "idefics2_native_128.py",
+    "original_basename": "idefics2_native_128.py",
+    "original_sha256": "760fb1db8035be1b707a7ed15e1b67cadb294dad778fe81bc2c52a78073defe0",
+    "public_sha256": "ee3fcbeee94c5bf440f06d8178976f825bf71e4a6d8042df0a290995494345c2",
+    "changes": "support-module discovery only; scientific methods unchanged",
+    "ast_method_identity": true
+  },
+  {
+    "public_file": "llava_native_128.py",
+    "original_basename": "llava_native_128.py",
+    "original_sha256": "51dc8f0a611d9cc4e3eb7287d167a2225f2a2b55046595a55fffbe62773e1032",
+    "public_sha256": "bfc5013c9b8ce050a47dc0289a895187d5428f2c66754e0242e3453557d60891",
+    "changes": "support-module discovery only; scientific methods unchanged",
+    "ast_method_identity": true
+  },
+  {
+    "public_file": "qwen3_native_128_bridge.py",
+    "original_basename": "qwen3_native_128_bridge_v2.py",
+    "original_sha256": "6735dec6757cadd4343020db93a92cfec8df68c5f572fb6d579b5949239cb07a",
+    "public_sha256": "a1662ef842bbc79c6cef4b5c2fa302be917110326e3edc491870a4c814192fbd",
+    "changes": "support-module discovery only; scientific methods unchanged",
+    "ast_method_identity": true
+  },
+  {
+    "public_file": "qwen3_native_adapter.py",
+    "original_basename": "qwen3_native_adapter.py",
+    "original_sha256": "3a0cbcef38c1c5408a935c23749e99b65fcc93ab2c7484a7bf136154e82e9ce5",
+    "public_sha256": "d1fad50b2fa92254cf044f1ffeedf0ae7168bf4680c5089dc503771055a90281",
+    "changes": "support-module discovery only; scientific methods unchanged",
+    "ast_method_identity": true
+  },
+  {
+    "public_file": "internvl_matrix_bridge.py",
+    "original_basename": "internvl_matrix_bridge.py",
+    "original_sha256": "7597036bc7fb0b547ab11250315380799e5ec8b5bc0bfc51053136fdcf95d678",
+    "public_sha256": "8997e859b4fe768034f3d2d14dc0954ca3318b8932c4eeb4ab8c1bf254a575b4",
+    "changes": "support-module discovery only; scientific methods unchanged",
+    "ast_method_identity": true
+  },
+  {
+    "public_file": "hf_native_runtime.py",
+    "original_basename": "hf_native_runtime.py",
+    "original_sha256": "faed8f070382c5731b55dc9b30c08255be221d4793ac5dfa7e8b43a7075a969f",
+    "public_sha256": "16e896662fdd03f4ed04d0653814c8076ec7f4245198e39f7b6ed27ef34c3777",
+    "changes": "support-module discovery only; scientific methods unchanged",
+    "ast_method_identity": true
+  },
+  {
+    "public_file": "token_trace.py",
+    "original_basename": "token_trace.py",
+    "original_sha256": "32671cbe17094cf65d43f8a3172fe3c3953235c3ec5360f720b5ae52f3e4277c",
+    "public_sha256": "bcce029297c7cd5844282e483d51bb4bcbcfa56fb8c68287cc4f6fa3a3a9d3b5",
+    "changes": "support-module discovery only; scientific methods unchanged",
+    "ast_method_identity": true
+  },
+  {
+    "public_file": "internvl_native_128_bridge.py",
+    "original_basename": "internvl_native_128_bridge.py",
+    "original_sha256": "8e8f5b2a010b8788bcc6c93d8a226c7f33102e630210649ba8890b152f5d2b42",
+    "public_sha256": "cf443c2510a3a787cc362c29c559e8e19d39eb5f6ec7d9216d5175ac5aa4e67f",
+    "changes": "support-module discovery only; scientific methods unchanged",
+    "ast_method_identity": true
+  }
+]
