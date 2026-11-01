@@ -45,6 +45,8 @@ def metadata(value):
         return [metadata(v) for v in value]
     if isinstance(value, str) and PRIVATE.search(value):
         return '[omitted: machine-specific provenance; original SHA256 retained]'
+    if isinstance(value, str) and re.search(r'GPU-[0-9a-fA-F]{8}-[0-9a-fA-F-]{20,}', value):
+        return '[omitted: host device identifier; original SHA256 retained]'
     return value
 
 

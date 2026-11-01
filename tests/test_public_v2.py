@@ -26,6 +26,9 @@ class PublicExportTests(unittest.TestCase):
     def test_prose_escape_is_not_a_windows_drive(self):
         m.assert_public({'raw_output': 'The answer is:\\n{"answer":"yes"}'})
 
+    def test_operational_device_identifier_redacted(self):
+        self.assertIn('omitted',m.metadata('GPU-12345678-1234-1234-1234-123456789abc'))
+
     def test_fixture_preserves_prompt_and_order(self):
         r = dict(fixture_id='x', system_prompt='verbatim', user_prompt='question',
                  image_refs=[{'slot': 1, 'relative_path': 's2/x.png', 'sha256': 'a'},
