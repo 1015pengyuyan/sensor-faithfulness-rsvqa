@@ -126,6 +126,9 @@ directed reversals. Non-requested-only correctness uses the requested-image gold
 not distractor recognition ability.
 
 The robustness and position packages are post-hoc, not independent confirmation.
+Original BEN alternate-position endpoints retained in the original archive are
+pre-correction historical outputs; they are superseded for position inference by
+the corrected-position/final-closeout packages, not combined with them.
 The 32-member multiplicity family includes all 8 models × 2 datasets × 2 sensors.
 Approximate Bonferroni-expanded intervals have limited empirical tail precision;
 they are not strict simultaneous-coverage guarantees. Requested-only capability

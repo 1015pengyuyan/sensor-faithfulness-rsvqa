@@ -9,6 +9,11 @@
 | Final position qualification | `position_closeout/` | Takes precedence over initial reuse-identity classifications |
 | Quantitative figures | `figures/` | Complete model displays; no dataset-image redistribution |
 
+The original statistics archive also retains pre-correction BEN alternate-position
+endpoints for provenance. They are **not** the final position evidence: use the
+corrected-position and final-closeout packages for position inference. Fixed-Main
+cross-dataset results are distinct from those superseded alternate-position controls.
+
 Qwen3B's initially empty adapter field was not proof of an adapter mismatch.
 Final closeout authenticates preserved native adapter/runner layers and separates
 the newer wrapper identity; its cross-run use remains supplementary. A 20-call
