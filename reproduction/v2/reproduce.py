@@ -28,7 +28,7 @@ def write_csv(p, rows):
 def verify(data):
     manifests = sorted((data / 'manifests').glob('*_FILES.json'))
     if not manifests:
-        raise FileNotFoundError('Extract the draft release attachments first; no release manifest found')
+        raise FileNotFoundError('Extract the release attachments first; no release manifest found')
     count = 0
     for mf in manifests:
         for r in json.loads(mf.read_text(encoding='utf-8'))['files']:
@@ -241,6 +241,8 @@ def figures(data, out):
     matplotlib.use('Agg')
     import matplotlib.pyplot as plt
     import numpy as np
+    from public_display import apply_public_display
+    apply_public_display()
     plt.rcParams.update({'pdf.fonttype': 42, 'svg.fonttype': 'none', 'font.size': 8})
     for ds in ('m4', 'bigearthnet'):
         rows = read_csv(data / f'analysis/original/MAIN_TABLE_{ds}_primary.csv')

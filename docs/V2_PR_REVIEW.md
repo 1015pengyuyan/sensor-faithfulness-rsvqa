@@ -3,7 +3,8 @@
 Prepare the V14.1 eight-checkpoint, two-dataset reproduction materials for owner
 review. The initial preparation did not authorize inference, scientific resampling,
 manuscript/server/scheduler changes, merge or formal publication. Code integration
-was separately authorized on 2026-11-02; the result attachments remain draft.
+was separately authorized on 2026-11-02. This is the original review record;
+the later publication authorization is recorded in V2_PUBLICATION_CHANGELOG.md.
 
 ## Included
 
@@ -11,7 +12,7 @@ was separately authorized on 2026-11-02; the result attachments remain draft.
 - Full checkpoint revisions, observed independent environment versions and official license sources.
 - First-party native adapters, fixed rendering, parameterized fixture builders,
   frozen parser/statistical definitions and portable CPU export/reproduction entry points.
-- Four draft-release evidence bundles: complete scientific predictions and fixture
+- Five draft-release evidence bundles: complete scientific predictions and fixture
   metadata; original statistics/cached source draws; post-hoc robustness; corrected
   positions/final qualification; complete quantitative figure sources.
 - Explicit replay/bridge accounting and original-source/public-file SHA256 manifests.
@@ -38,6 +39,7 @@ The local connection file is preserved and ignored. The historical v1.0.1-paper
 tag is unchanged. Author/citation metadata and some upstream standalone-license
 texts remain unresolved as listed in `docs/V2_PUBLICATION_LIMITS.md`.
 
-Current access status: code and documentation are public on `main`; draft result
-attachments still require owner review before publication. Do not describe the
-complete result materials in the manuscript as public until actually released.
+Access boundary: code integration is not result publication. Do not describe
+complete result materials as public until formal publication and anonymous
+download verification. Historical preparation checks above are retained, not
+rerun estimates for the font/license update.
