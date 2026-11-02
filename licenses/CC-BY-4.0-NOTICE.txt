@@ -1,0 +1,5 @@
+Creative Commons Attribution 4.0 International
+Official legal code: https://creativecommons.org/licenses/by/4.0/legalcode.en
+This scope notice is not a substitute license text. See LICENSE_SCOPE.json
+in each attachment: only project-held contributions are licensed here.
+Third-party content, model answers and font software are not relicensed.

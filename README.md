@@ -11,9 +11,11 @@ replacement sensitivity. Low reversal rates alone are not faithfulness evidence.
 
 The eight-model reproduction **code and documentation are public on
 [main](https://github.com/1015pengyuyan/sensor-faithfulness-rsvqa/tree/main)**.
-The five result attachments for **v2.0.0-eight-model remain an unpublished
-draft**; the complete result release is not yet publicly available and no formal
-v2 Git tag has been created. Code access does not imply result-attachment access.
+This revision prepares five result attachments for **v2.0.0-eight-model**.
+Code access does not imply attachment access: while the result record is draft,
+the complete results are not publicly available. The intended permanent record is
+[v2.0.0-eight-model](https://github.com/1015pengyuyan/sensor-faithfulness-rsvqa/releases/tag/v2.0.0-eight-model);
+use it only after publication and checksum verification, never an untagged draft URL.
 The public
 [v1.0.1-paper](https://github.com/1015pengyuyan/sensor-faithfulness-rsvqa/releases/tag/v1.0.1-paper)
 is the unchanged historical reproduction version, not the eight-model extension.
@@ -23,7 +25,9 @@ Start with [v2 reproduction](docs/V2_REPRODUCTION.md),
 [data and licensing](docs/V2_DATA_AND_LICENSES.md), and
 [full revisions and environments](configs/v2/models.json).
 The [attachment license matrix](docs/V2_ATTACHMENT_LICENSE_MATRIX.md) separates
-existing code terms from the result licenses still awaiting owner decisions.
+existing code terms from the authorized project-owned CC BY 4.0 contributions,
+inherited data terms, model-output notices and third-party font terms.
+No mixed ZIP has a single license.
 
 ## Eight checkpoints
 
@@ -96,7 +100,7 @@ Failures/abstentions count as wrong for capability, not as directed reversals.
 python -m pip install -e .
 python -m unittest discover -s tests -p 'test_public_v2.py' -v
 python reproduction/v2/reproduce.py demo --out reproduced
-# Extract draft attachments to reproduction_data/, then:
+# After obtaining and verifying the evidence attachments, extract to reproduction_data/:
 python reproduction/v2/reproduce.py all --data reproduction_data --out reproduced
 ```
 
@@ -110,6 +114,11 @@ A0/A2/A3 IDs remain in metadata; display terminology does not rename artifacts.
 Repository-authored code: [Apache-2.0](LICENSE). Checkpoint/dataset/third-party terms
 are separate; see [notices](THIRD_PARTY_NOTICES.md) and
 [v2 terms](docs/V2_DATA_AND_LICENSES.md). Obtain images/weights officially.
+Project-owned result, chart, report and added wording/allocation contributions:
+[CC BY 4.0 scope](RESULTS_LICENSE_SCOPE.md). Raw model answers have
+[separate notices](MODEL_OUTPUT_NOTICES.md), not a blanket output-use grant.
+Prepared public chart copies use verified DejaVu fonts; original Arial archives
+are preserved locally. New display bytes are not claimed identical to V14.1.
 No protected or new official-test access is granted.
 
 Legacy scripts/configs/fixtures and `results/paper_summary/` remain historical,

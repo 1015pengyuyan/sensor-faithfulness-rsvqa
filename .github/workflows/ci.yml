@@ -15,6 +15,7 @@ jobs:
       - run: pip install -e .
       - run: python -m unittest discover -s tests -p "test_core.py" -v
       - run: python -m unittest discover -s tests -p "test_public_v2.py" -v
+      - run: python -m unittest discover -s tests -p "test_public_display.py" -v
       - run: python reproduction/v2/reproduce.py demo --out reproduced
       - run: python scripts/check_paper_consistency.py
       - run: python scripts/verify_fixture.py fixtures/m4sar/COUNTERFACTUAL_CONFIRMATORY_FIXTURE.jsonl --expected-sha256 94b71c918476a266a901ee7d3430f16d3c104369c6ce29c1cce1a4e50555baef

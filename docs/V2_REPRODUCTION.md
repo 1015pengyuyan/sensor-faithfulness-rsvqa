@@ -3,14 +3,17 @@
 ## Status and layout
 
 The V14.1 reproduction code and documentation are public on `main`.
-The five `v2.0.0-eight-model` result attachments remain an **unpublished draft**,
-not a publicly accessible complete result release. No formal v2 Git tag is created.
+This revision prepares five `v2.0.0-eight-model` result attachments. While their
+record is draft they are not a public result archive. Publication and independently
+verified downloads are required before citing the intended
+[version record](https://github.com/1015pengyuyan/sensor-faithfulness-rsvqa/releases/tag/v2.0.0-eight-model).
+The file identities are in `reproduction/v2/RELEASE_ATTACHMENTS.json`.
 The historical [v1.0.1-paper](https://github.com/1015pengyuyan/sensor-faithfulness-rsvqa/releases/tag/v1.0.1-paper)
 reproduces the earlier study only; it does not cover the eight-model extension.
 The unversioned legacy `scripts/`, `configs/`, `fixtures/` and `results/paper_summary/`
 are preserved historical assets. Use `reproduction/v2/` and `configs/v2/` for this update.
 
-Once the owner grants access or publishes them, unzip evidence attachments 01–04
+After obtaining and verifying them, unzip evidence attachments 01–04
 into the **same**, initially empty directory; attachment 05 contains validation
 receipts. The commands below require those files and do not imply public access:
 
@@ -57,6 +60,13 @@ claim that absent image bytes were checked. Archived route/processor evidence is
 provided separately. Quantitative figure source data and accepted vector figures
 are in the figure attachment. The task illustration containing dataset pixels is
 not redistributed.
+
+Prepared public quantitative charts use verified Matplotlib 3.9.2 DejaVu Sans
+font files listed in `PUBLIC_DISPLAY.json`, under their preserved font license.
+They are independent display copies, not byte-identical V14.1 figure archives.
+Fixed values and source tables are unchanged. Missing or altered font files fail
+explicitly rather than silently substituting fonts. The article-figure command
+rebuilds the three figures without estimates or random draws.
 
 `frozen_metrics.py` mechanically preserves the accepted source-contribution,
 replicate aggregation, eligibility and percentile definitions. The original

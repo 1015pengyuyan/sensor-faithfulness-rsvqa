@@ -42,6 +42,8 @@ The `pinned_internvl_128` wrappers are likewise project-authored. Their origins,
 original hashes and limited module-location changes are recorded.
 
 The result attachments have no blanket Apache-2.0 grant. See
-`docs/V2_ATTACHMENT_LICENSE_MATRIX.md` for per-material terms and pending owner
-decisions, including model outputs and the document-embedded Arial font subsets
-in three quantitative PDFs. No standalone font software is supplied.
+`docs/V2_ATTACHMENT_LICENSE_MATRIX.md` for per-material terms and
+`MODEL_OUTPUT_NOTICES.md` for generated-answer boundaries. Project CC BY 4.0 covers
+only own contributions. Prepared public chart PDFs embed independently licensed
+DejaVu subsets, not the original Arial archive copies. The full font notice is
+preserved; no standalone font software is supplied.

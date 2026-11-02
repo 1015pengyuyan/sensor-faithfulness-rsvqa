@@ -1,7 +1,7 @@
 # Review before publishing the result attachments
 
-Code and documentation are public on `main`; the five result attachments remain
-an unpublished draft. Code integration is not publication of the complete results.
+Code and documentation are public on `main`. Code integration is not publication
+of the complete results; a draft attachment record is not public access.
 Do not describe the result attachments as public or update the manuscript's
 complete-result availability claim before their actual release.
 
@@ -24,8 +24,11 @@ Confirmed boundaries:
 - No source selection, significance filtering, new draws or model calls were used
   to prepare these materials. All eight models and non-positive outcomes remain.
 
-Owner review should confirm the final citation metadata and any explicit license
-for derived research outputs. The Apache-2.0 code license does not relabel upstream
-datasets or checkpoints. Historical tags must remain unchanged.
+Final citation metadata remain pending. The owner authorized CC BY 4.0 only for
+project-owned result, chart, report and added wording/arrangement contributions.
+Neither that grant nor Apache-2.0 relabels upstream data, model answers or font
+software. Historical tags remain unchanged.
 See [the attachment license matrix](V2_ATTACHMENT_LICENSE_MATRIX.md) for the
-specific unresolved grants and the separate inventory of embedded document fonts.
+file/field scope and independent-font display decision. No unsupported generated-
+answer reuse promise is made. Arial originals remain local; public display copies
+use verified DejaVu under its own terms, not project CC BY.

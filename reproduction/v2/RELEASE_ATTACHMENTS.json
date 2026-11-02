@@ -1,51 +1,69 @@
 [
   {
     "name": "01_main_predictions_fixtures.zip",
-    "bytes": 42973701,
-    "sha256": "6cffbb1033c2997fbb999258f5520ebb660730684d36614413420be2e56ccc1e",
-    "files": 55,
+    "bytes": 42986660,
+    "sha256": "7def8dd72302bf741c66f367076eeacd1501680e31c08925bbf77f01e003878b",
+    "files": 64,
     "scope": [
       "main",
       "fixtures"
-    ]
+    ],
+    "prior_draft_sha256": "6cffbb1033c2997fbb999258f5520ebb660730684d36614413420be2e56ccc1e",
+    "record_accounting": {
+      "scientific": 139092,
+      "replays": 416,
+      "stages": 16,
+      "calls_are_not_independent_samples": true
+    }
   },
   {
     "name": "02_statistics_cached_draws.zip",
-    "bytes": 121176546,
-    "sha256": "56849563ba2276ac6f8397673a0d068d1eb458092e8ecf2757eeb2ef8c1330a0",
-    "files": 103,
+    "bytes": 121192429,
+    "sha256": "6e22969af893aeb03259f55b278fc5755240a37dcd80f1aa2867d7adb2338818",
+    "files": 112,
     "scope": [
       "analysis",
       "robustness"
-    ]
+    ],
+    "prior_draft_sha256": "56849563ba2276ac6f8397673a0d068d1eb458092e8ecf2757eeb2ef8c1330a0"
   },
   {
     "name": "03_position_correction.zip",
-    "bytes": 13541168,
-    "sha256": "1e0504f328ce770105c11355a545df0d9a484e6b320f2d22cf873e2d2b7044cd",
-    "files": 48,
+    "bytes": 13553971,
+    "sha256": "12fad146d181528a89938c44befe69937c64dede0e8018e751614bdea2ad9ca6",
+    "files": 57,
     "scope": [
       "position",
       "position_analysis",
       "position_closeout"
-    ]
+    ],
+    "prior_draft_sha256": "1e0504f328ce770105c11355a545df0d9a484e6b320f2d22cf873e2d2b7044cd",
+    "record_accounting": {
+      "v8_v9_scientific": 29980,
+      "v8_v9_replays": 260,
+      "earlier_llava_scientific": 2998,
+      "earlier_llava_replays": 26,
+      "technical_bridge_calls_not_scientific": 40
+    }
   },
   {
     "name": "04_figure_source_data.zip",
-    "bytes": 2423052,
-    "sha256": "5b2187e162056719626c607356518efc269d3b9c31def7e03539f844648b4ab9",
-    "files": 65,
+    "bytes": 2364870,
+    "sha256": "0b71530777dedd40b85f76d23b4f5796d4b06410ebd4ea44002ff0ad46cddca3",
+    "files": 77,
     "scope": [
       "figures"
-    ]
+    ],
+    "prior_draft_sha256": "5b2187e162056719626c607356518efc269d3b9c31def7e03539f844648b4ab9"
   },
   {
     "name": "05_cpu_reproduction_checks.zip",
-    "bytes": 127803,
-    "sha256": "8ba080404a77ab0d3155a8475d2c814c37983a41cd21d6060d4a9ad37e67e1f1",
-    "files": 13,
+    "bytes": 54553,
+    "sha256": "beaae1505f391a26ffb02917af5c6bcdfe4bafbf4caed1649e2b299d3ac4b760",
+    "files": 20,
     "scope": [
-      "CPU reproduction and public-export checks"
-    ]
+      "checks"
+    ],
+    "prior_draft_sha256": "8ba080404a77ab0d3155a8475d2c814c37983a41cd21d6060d4a9ad37e67e1f1"
   }
 ]

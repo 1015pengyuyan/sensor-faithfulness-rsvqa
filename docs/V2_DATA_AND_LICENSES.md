@@ -13,19 +13,20 @@ Qwen2.5-VL-3B and Qwen2.5-VL-7B do not share identical checkpoint license terms.
 | M4-SAR | [pinned dataset](https://huggingface.co/datasets/wchao0601/m4-sar/tree/e1609a2c7d2cacda10d4ad1e895df9627f37c236) | CC-BY-4.0; selected IDs, questions/labels and allocations only; attribution retained |
 | BigEarthNet.txt | [pinned dataset](https://huggingface.co/datasets/BIFOLD-BigEarthNetv2-0/BigEarthNet.txt/tree/72d865f2146f0a85b720f7f3ca1cdbaeafc3d316) | CDLA-Permissive-1.0; selected metadata only |
 | BigEarthNet v2 | [official data record](https://doi.org/10.5281/zenodo.10891137) | CDLA-Permissive-1.0; no image distribution or new test access |
-| Model outputs and derived statistics | Draft v2 attachments | Repository-generated research evidence; retain model/data source attribution and applicable upstream terms |
+| Model answers | Versioned evidence attachments | Independent MODEL_OUTPUT_NOTICES; no blanket project CC BY grant |
+| Own statistics, charts, reports, added wording/arrangement | Versioned evidence attachments | CC BY 4.0 only for own contributions; file/field overrides retain source rights |
 | Manuscript PDF | Not included | Author metadata pending; no guessed authors, DOI, journal or publication claim |
 
-Code and documentation are public on `main`. The five result attachments remain
-an unpublished draft; the complete extension result release is not public.
+Code and documentation are public on `main`. Attachment access requires a
+published result record and verified downloads; a draft is not public access.
 Historical public assets remain at `v1.0.1-paper` unchanged.
-Author information and any final dataset-output licensing choice should be
-confirmed before publication; do not treat the code license as a blanket grant
-over third-party-origin metadata or checkpoint-generated outputs.
+Owner-authorized project contributions use RESULTS_LICENSE_SCOPE.md. Neither the
+code license nor that grant covers inherited metadata, model answers or font
+software. Author metadata remain pending.
 
 The [attachment license matrix](V2_ATTACHMENT_LICENSE_MATRIX.md) records actual
 distributed materials, separate non-distributed upstream assets, and the specific
-owner decisions still needed. No new attachment-wide license has been selected.
+file/field overrides. No attachment-wide license has been selected.
 
 ## Public export rules
 
