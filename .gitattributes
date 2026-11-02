@@ -1,3 +1,6 @@
 configs/bigearthnet_rendering.json -text
 results/paper_summary/cross_dataset_summary.csv -text
 results/paper_summary/robust_flip_results.csv -text
+reproduction/v2/** -text whitespace=cr-at-eol,-blank-at-eof
+configs/v2/** -text whitespace=cr-at-eol
+docs/V2_SCIENTIFIC_INCLUSION_POLICY.md whitespace=-blank-at-eol

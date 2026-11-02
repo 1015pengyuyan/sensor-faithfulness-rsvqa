@@ -1,187 +1,116 @@
-# Auditing Sensor Faithfulness in Remote-Sensing Visual Question Answering via Counterfactual Optical–SAR Conflicts
+# Cross-sensor conflict diagnosis in remote-sensing VQA
 
-This repository contains the code, fixed metadata-only fixtures, configuration
-files, and paper-artifact generators for a diagnostic study of whether
-remote-sensing VQA models follow the explicitly requested sensor when optical
-and SAR evidence conflict. It is an evaluation repository, not a hallucination
-mitigation method.
+Reproduction materials for the **V14.1 working manuscript**: a retrospective
+behavioral diagnosis on two remote-sensing datasets and eight fixed checkpoints.
+Controlled replacement of the **non-requested** image separates target-label
+retention, reverse-label answers, abstention and parser failure. A second
+same-label (congruent) replacement tests additional reversals beyond ordinary
+replacement sensitivity. Low reversal rates alone are not faithfulness evidence.
 
-![Requested-sensor counterfactual protocol](figures/protocol_overview.svg)
+## Versions and access
 
-## Core findings
+The eight-model reproduction **code and documentation are public on
+[main](https://github.com/1015pengyuyan/sensor-faithfulness-rsvqa/tree/main)**.
+The five result attachments for **v2.0.0-eight-model remain an unpublished
+draft**; the complete result release is not yet publicly available and no formal
+v2 Git tag has been created. Code access does not imply result-attachment access.
+The public
+[v1.0.1-paper](https://github.com/1015pengyuyan/sensor-faithfulness-rsvqa/releases/tag/v1.0.1-paper)
+is the unchanged historical reproduction version, not the eight-model extension.
+No final-author manuscript PDF or invented citation metadata are supplied.
 
-- Counterfactual susceptibility was observed across the two evaluated datasets
-  and three evaluated models.
-- Directional interference was heterogeneous across models. The external
-  BigEarthNet interface was pre-specified as optical-first/SAR-second.
-- Sensor competence does not by itself establish evidence faithfulness.
+Start with [v2 reproduction](docs/V2_REPRODUCTION.md),
+[data and licensing](docs/V2_DATA_AND_LICENSES.md), and
+[full revisions and environments](configs/v2/models.json).
+The [attachment license matrix](docs/V2_ATTACHMENT_LICENSE_MATRIX.md) separates
+existing code terms from the result licenses still awaiting owner decisions.
 
-These findings do **not** establish universal optical dominance, universal SAR
-weakness, causal sensor dominance, or state-of-the-art mitigation.
+## Eight checkpoints
 
-## Installation
+| Checkpoint | Official source | Native interface |
+|---|---|---|
+| Qwen2.5-VL-3B-Instruct | [Qwen](https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct) | Ordered multi-/single-/no-image |
+| Qwen2.5-VL-7B-Instruct | [Qwen](https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct) | Ordered multi-/single-/no-image |
+| LLaVA-OneVision-Qwen2-7B-ov | [LLaVA](https://huggingface.co/llava-hf/llava-onevision-qwen2-7b-ov-hf) | Native ordered images; inclusion policy below |
+| EarthMind-4B | [EarthMind](https://huggingface.co/sy1998/EarthMind-4B) | Named SAR `image` / optical `rgb_image` |
+| Qwen3-VL-8B-Instruct | [Qwen](https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct) | Native ordered multi-/single-/no-image |
+| InternVL3.5-8B | [OpenGVLab](https://huggingface.co/OpenGVLab/InternVL3_5-8B) | Native chat and image-context tokens |
+| Mantis-8B-SigLIP-Llama3 | [TIGER-Lab](https://huggingface.co/TIGER-Lab/Mantis-8B-siglip-llama3) | Native Mantis image markers |
+| Idefics2-8B | [Hugging Face](https://huggingface.co/HuggingFaceM4/idefics2-8b) | Native typed chat content |
 
-For the CPU-only demo and paper artifacts:
+Eight checkpoints span seven named families, with shared components; model count
+is not independent architecture diversity. Full 40-character revisions, separate
+licenses and observed environments are in `configs/v2/models.json`. Native
+templates/EOS/processors differ: visual-token budgets and tensors are not identical.
 
-```bash
-conda env create -f environment.yml
-conda activate sensor-faithfulness-rsvqa
-pip install -e .
-```
+## Cohorts and interfaces
 
-The historical GPU manifests recorded Python 3.10, PyTorch 2.3.1, and
-Transformers 4.49.0. Model-specific upstream packages may also be required by
-EarthMind custom code; see [docs/REPRODUCIBILITY.md](docs/REPRODUCIBILITY.md).
+| Analysis | Questions | Physical target sources |
+|---|---:|---:|
+| M4-SAR | 420 | 420 |
+| BigEarthNet.txt primary | 321 | 282 |
+| BEN whole-source exclusion | 313 | 275 |
+| BEN second-congruent subset | 215 | 195 |
+| BEN second-congruent after exclusion | 209 | 189 |
 
-## Data preparation
+BEN historical allocation was 341 questions/295 sources. Removing 20 technical
+smoke questions gives 321/282. Excluding seven overlapping **whole sources removes
+eight additional questions**, giving 313/275; 28 is cumulative relative to 341.
 
-Raw images are not included. Obtain data from the official sources, accept their
-licenses, and place only allowed non-test assets under `${DATA_ROOT}`.
+Generic M4 primary input is **requested-first**. BEN primary is
+**optical-first/SAR-second**: requested optical occupies slot 1 and requested SAR
+slot 2. EarthMind has named branches, not generic position/single-/no-image controls.
 
-- M4-SAR: `wchao0601/m4-sar`, revision
-  `e1609a2c7d2cacda10d4ad1e895df9627f37c236`.
-- BigEarthNet.txt annotations: `BIFOLD-BigEarthNetv2-0/BigEarthNet.txt`,
-  revision `72d865f2146f0a85b720f7f3ca1cdbaeafc3d316`.
-- BigEarthNet v2 images: DOI `10.5281/zenodo.10891137`, version 2.0.0.
+## Evidence layers
 
-The repository never requires or authorizes access to the M4-SAR official test
-split. See [docs/DATASETS.md](docs/DATASETS.md) for expected relative paths and
-license boundaries.
+- **Unified original-prompt 128-token main matrix:** eight models, two datasets,
+  deterministic decoding and frozen parser. **139,092 scientific condition-input
+  records + 416 replays**. Calls are not independent samples. Full-population A0
+  balanced accuracy describes capability, separately from conditional CIFR/RSR.
+- **Post-hoc robustness:** complete eight-model multiplicity family, applicable
+  requested-only capability subsets and BEN source exclusion. Subset intervals are
+  unadjusted; approximate Bonferroni tail precision does not guarantee simultaneous coverage.
+- **Post-hoc BEN position correction:** request/ignore references repaired without
+  changing task, labels, images or decoding. Four models have complete same-round
+  Main/Alternative data. Qwen3B/Mantis cross-run reuse is supplementary. LLaVA's
+  unarchived bridge is not authenticated for paired position inference; EarthMind is N/A.
 
-## Model preparation
+All models and zero, reverse, uncertain and non-estimable results are retained.
+Effects depend on model, sensor and position—not a universal eight-model effect.
+Different model-specific eligible populations do not establish strict faithfulness
+ranks. Intervals condition on fixed distractors and exposed sources; independent
+parent-scene/geographic validation remains unestablished.
 
-Download checkpoints from their official repositories into `${MODEL_ROOT}` and
-pin the revisions in [configs/models.yaml](configs/models.yaml):
+### LLaVA scientific inclusion is not technical re-admission
 
-- Qwen2.5-VL-3B-Instruct: `66285546d2b821cf421d4f5eb2576359d3770cd3`
-- EarthMind-4B: `f17c66b01e540268f3862a540e84a3f7ee329cd3`
-- LLaVA-OneVision-7B: `0d50680527681998e456c7b78950205bedd8a068`
+The original 99% semantic-parse gate remains unchanged: 380/384 (98.9583%) was
+**smoke FAIL / NOT_ADMITTED**. A dated scientific-inclusion supplement retained
+format failures as outcomes for **all eight models**, without waiving engineering
+gates. Original-prompt LLaVA predictions are included under that policy. Revised-
+format compatibility is separate and does not change the old decision.
+Failures/abstentions count as wrong for capability, not as directed reversals.
 
-Qwen and LLaVA-OneVision are general VLM controls. EarthMind is described here
-conservatively as a multi-sensor EO model. Checkpoints retain their upstream
-licenses and are not redistributed.
-
-## Quick start: no GPU and no large model
-
-```bash
-python scripts/compute_cifr_rsr.py \
-  --predictions examples/small_demo/predictions.csv \
-  --fixture examples/small_demo/fixture.csv
-```
-
-Expected key output:
-
-```text
-CIFR = 0.8888888889
-RSR  = 0.1111111111
-ASYM = 0.3333333333
-```
-
-This synthetic demo checks the metric implementation only. It is not a paper
-result.
-
-## Verify the fixed fixtures
-
-```bash
-python scripts/verify_fixture.py \
-  fixtures/m4sar/COUNTERFACTUAL_CONFIRMATORY_FIXTURE.jsonl \
-  --expected-sha256 94b71c918476a266a901ee7d3430f16d3c104369c6ce29c1cce1a4e50555baef
-
-python scripts/verify_fixture.py \
-  fixtures/bigearthnet/BIGEARTHNET_EXTERNAL_FULL_FIXTURE.jsonl \
-  --expected-sha256 262ebdcc3b09da82ed4508cae7edce9235857b864acd81b2130078be51fda6cb
-```
-
-Both commands must report zero duplicate fixture IDs, source overlap, label
-violations, missing requested evidence, and prohibited test references.
-
-## Reproduce M4-SAR
-
-The confirmatory fixture contains 420 source clusters and 3,360 rows. It uses
-requested-evidence-first ordering and the conditions `A0_CONGRUENT`,
-`A2_CONFLICT`, `A3_CONFLICT_REPLICATE_1`, and
-`A3_CONFLICT_REPLICATE_2`. The 200 pilot sources are listed separately and are
-not part of the confirmatory fixture.
+## CPU reproduction—no inference or new random draws
 
 ```bash
-python scripts/run_inference.py \
-  --backend qwen \
-  --model ${MODEL_ROOT}/Qwen2.5-VL-3B-Instruct \
-  --revision 66285546d2b821cf421d4f5eb2576359d3770cd3 \
-  --fixture fixtures/m4sar/COUNTERFACTUAL_CONFIRMATORY_FIXTURE.jsonl \
-  --expected-fixture-sha256 94b71c918476a266a901ee7d3430f16d3c104369c6ce29c1cce1a4e50555baef \
-  --data-root ${DATA_ROOT} \
-  --output outputs/raw/m4sar_qwen.jsonl \
-  --manifest outputs/m4sar_qwen_manifest.json
+python -m pip install -e .
+python -m unittest discover -s tests -p 'test_public_v2.py' -v
+python reproduction/v2/reproduce.py demo --out reproduced
+# Extract draft attachments to reproduction_data/, then:
+python reproduction/v2/reproduce.py all --data reproduction_data --out reproduced
 ```
 
-Use `--backend earthmind` or `--backend llava_onevision` with the pinned model
-and revision. The wrapper retains failed rows and never changes the parser.
+See [full instructions](docs/V2_REPRODUCTION.md). This validates exports, re-scores
+saved predictions, verifies intervals against saved endpoint arrays, and rebuilds
+tables/vector plots. Missing assets fail explicitly. Frozen task text and internal
+A0/A2/A3 IDs remain in metadata; display terminology does not rename artifacts.
 
-## Reproduce BigEarthNet
+## Terms and historical materials
 
-The full fixture contains 341 sources; the primary external summary excludes
-the 20 pre-exposed smoke sources listed in
-`metadata/BIGEARTHNET_SMOKE_EXCLUDED_SOURCES.csv`, leaving 321 sources. The
-interface is optical-first/SAR-second for both requested directions. Frozen
-rendering is defined in [configs/bigearthnet_rendering.json](configs/bigearthnet_rendering.json).
+Repository-authored code: [Apache-2.0](LICENSE). Checkpoint/dataset/third-party terms
+are separate; see [notices](THIRD_PARTY_NOTICES.md) and
+[v2 terms](docs/V2_DATA_AND_LICENSES.md). Obtain images/weights officially.
+No protected or new official-test access is granted.
 
-Use the same `scripts/run_inference.py` command with the BigEarthNet fixture and
-its hash. Do not alter the rendering, prompt, image order, distractor mapping,
-or parser for any model.
-
-## Metrics
-
-- **CIFR:** among A0-correct source/direction pairs, the mean indicator that an
-  opposite condition answers with the opposite distractor label.
-- **RSR:** among the same pairs, the mean indicator that the target answer is
-  retained under conflict.
-- **ASYM:** paired source-level SAR-requested CIFR minus optical-requested CIFR.
-- **Robust flip:** an A0-correct target flips for at least two of three
-  independent opposite distractors.
-
-Replicates are averaged within a source/direction. Bootstrap resampling is over
-target source clusters. Exact definitions are in [docs/METRICS.md](docs/METRICS.md).
-
-## Reproduce paper tables
-
-```bash
-python scripts/reproduce_table3.py
-python scripts/check_paper_consistency.py
-```
-
-The first command rebuilds `results/paper_summary/table3_reproduced.tex`. The
-second verifies the frozen fixture, rendering, robust-flip, and six-row summary
-hashes.
-
-## Reproduce paper figures
-
-```bash
-python scripts/reproduce_figure2.py
-python scripts/reproduce_figure3.py
-```
-
-Outputs are written to `figures/` as PDF and PNG. Plotting reads the frozen
-summary; it does not recompute or modify results.
-
-## Tests
-
-```bash
-PYTHONPATH=src python -m unittest discover -s tests -p "test_core.py" -v
-```
-
-On PowerShell, use `$env:PYTHONPATH='src'` before the Python command.
-
-## Citation
-
-The final author order has not yet been provided. `CITATION.cff` therefore
-contains an explicit TODO and must be completed before public release. No paper
-DOI, journal, volume, issue, pages, or publication status is asserted here.
-
-## License
-
-Repository-authored code is prepared under the Apache License 2.0 candidate in
-`LICENSE`. Third-party datasets and model checkpoints retain their original
-licenses and are not redistributed by this repository. See
-[OPEN_SOURCE_LICENSE_AUDIT.md](OPEN_SOURCE_LICENSE_AUDIT.md) and
-[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+Legacy scripts/configs/fixtures and `results/paper_summary/` remain historical,
+not current eight-model tables. [Citation metadata](CITATION.md) remain pending.

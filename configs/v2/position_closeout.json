@@ -1,0 +1,36 @@
+{
+  "version": "v13_phase1_position_analysis_20261028_v2_final_cpu_closeout",
+  "analysis_class": "posthoc retrospective CPU closeout",
+  "inference_calls": 0,
+  "new_random_draws": 0,
+  "read_only_against": [
+    "v13_phase1_position_analysis_20261028_v1",
+    "frozen prediction files",
+    "frozen fixtures",
+    "accepted source bootstrap multiplicity matrices"
+  ],
+  "position_eligibility": "target-question × requested-sensor whose A0 is correct in both Main and Alternative; absolute rates at both positions use the same paired set",
+  "C1_eligibility": "the common A0-correct-both-position set intersected with the frozen second-congruent-assigned subset",
+  "position_sign": "slot 2 minus slot 1; optical Alternative−Main, SAR Main−Alternative",
+  "opposite_replicates": "three replicates averaged within each eligible target-question × requested-sensor × position",
+  "answer_outcomes": [
+    "target_label_answer",
+    "reverse_label_answer",
+    "abstain",
+    "parse_failure"
+  ],
+  "format_status_separate": true,
+  "bootstrap": {
+    "reuse_existing_multiplicity_matrices": true,
+    "resampling_unit": "physical target source; only eligible question-level records travel with the source",
+    "draws": 10000,
+    "seed_in_original_draw_generation": 20261016,
+    "interval": "pointwise 95% percentile, linear/type-7",
+    "redraw": false,
+    "zero_denominator_policy": "retain as invalid and report count; no replacement draw"
+  },
+  "qwen3b_reuse_audit": "native frozen adapter/runner and outer wrapper are recorded as separate identity layers; blank legacy top-level adapter metadata is not interpreted as a mismatch",
+  "llava_bridge_audit": "bridge_dir null is not proof of nonexistence; use available archived evidence or report unable to authenticate",
+  "interpretation": "all endpoints remain exploratory pointwise results; Qwen3 [0,0] is empirical bootstrap degeneracy, not proof of an exactly zero population effect",
+  "original_source_sha256": "8e251109ae937334afe4e3eb0c094fdf3384e11839de4cbd194e69d708991ede"
+}

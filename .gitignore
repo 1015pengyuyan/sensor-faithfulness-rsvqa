@@ -43,3 +43,7 @@ slurm-*.out
 Thumbs.db
 .idea/
 .vscode/
+# Local access instructions: retain on disk, never commit or package.
+/docs/SERVER_CONNECTION.md
+/reproduction_data/
+/reproduced/

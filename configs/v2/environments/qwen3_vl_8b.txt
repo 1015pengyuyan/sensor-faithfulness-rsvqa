@@ -1,0 +1,5 @@
+# Observed scientific-run direct versions; Linux Python 3.10.20.
+# Separate environment; not a complete transitive lock.
+torch==2.5.1+cu121
+transformers==4.57.3
+accelerate==1.11.0

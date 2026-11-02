@@ -1,0 +1,140 @@
+[
+  {
+    "model_id": "qwen25_vl_3b",
+    "revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+    "checkpoint_url": "https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct/tree/66285546d2b821cf421d4f5eb2576359d3770cd3",
+    "license_source": "https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct/blob/66285546d2b821cf421d4f5eb2576359d3770cd3/LICENSE",
+    "readme_source": "https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct/blob/66285546d2b821cf421d4f5eb2576359d3770cd3/README.md",
+    "configuration_source": "https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct/blob/66285546d2b821cf421d4f5eb2576359d3770cd3/config.json",
+    "LICENSE_http": 200,
+    "LICENSE_sha256": "b5c0e5cf74cf51af1ecbc4af597cfcd13fd9925611838884a681070838a14a50",
+    "license_title": "Qwen RESEARCH LICENSE AGREEMENT",
+    "config.json_http": 200,
+    "config.json_sha256": "7ed3eed5be6924cc800e8a5e53fc405c1aab1aaf36bad65c33403b36c56827f5",
+    "architecture": [
+      "Qwen2_5_VLForConditionalGeneration"
+    ],
+    "model_type": "qwen2_5_vl",
+    "language_model_type": null,
+    "vision_model_type": null
+  },
+  {
+    "model_id": "llava_onevision_7b",
+    "revision": "0d50680527681998e456c7b78950205bedd8a068",
+    "checkpoint_url": "https://huggingface.co/llava-hf/llava-onevision-qwen2-7b-ov-hf/tree/0d50680527681998e456c7b78950205bedd8a068",
+    "license_source": "https://huggingface.co/llava-hf/llava-onevision-qwen2-7b-ov-hf/blob/0d50680527681998e456c7b78950205bedd8a068/LICENSE",
+    "readme_source": "https://huggingface.co/llava-hf/llava-onevision-qwen2-7b-ov-hf/blob/0d50680527681998e456c7b78950205bedd8a068/README.md",
+    "configuration_source": "https://huggingface.co/llava-hf/llava-onevision-qwen2-7b-ov-hf/blob/0d50680527681998e456c7b78950205bedd8a068/config.json",
+    "LICENSE_status": "HTTPError: HTTP Error 404: Not Found",
+    "config.json_http": 200,
+    "config.json_sha256": "69277c2c9ba8a4f61d2e72f79fbe02e043b8c3af670858a606818527f971a0c2",
+    "architecture": [
+      "LlavaOnevisionForConditionalGeneration"
+    ],
+    "model_type": "llava_onevision",
+    "language_model_type": "qwen2",
+    "vision_model_type": "siglip_vision_model"
+  },
+  {
+    "model_id": "earthmind_4b",
+    "revision": "f17c66b01e540268f3862a540e84a3f7ee329cd3",
+    "checkpoint_url": "https://huggingface.co/sy1998/EarthMind-4B/tree/f17c66b01e540268f3862a540e84a3f7ee329cd3",
+    "license_source": "https://huggingface.co/sy1998/EarthMind-4B/blob/f17c66b01e540268f3862a540e84a3f7ee329cd3/LICENSE",
+    "readme_source": "https://huggingface.co/sy1998/EarthMind-4B/blob/f17c66b01e540268f3862a540e84a3f7ee329cd3/README.md",
+    "configuration_source": "https://huggingface.co/sy1998/EarthMind-4B/blob/f17c66b01e540268f3862a540e84a3f7ee329cd3/config.json",
+    "LICENSE_status": "HTTPError: HTTP Error 404: Not Found",
+    "config.json_http": 200,
+    "config.json_sha256": "5a3d8588d3ae7c82b2658fc3ea179c46888ca86356b20b258af92ce3af35e0e8",
+    "architecture": [
+      "Sa2VAChatModel"
+    ],
+    "model_type": "sa2va_chat",
+    "language_model_type": "qwen2",
+    "vision_model_type": "intern_vit_6b"
+  },
+  {
+    "model_id": "qwen3_vl_8b",
+    "revision": "0c351dd01ed87e9c1b53cbc748cba10e6187ff3b",
+    "checkpoint_url": "https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct/tree/0c351dd01ed87e9c1b53cbc748cba10e6187ff3b",
+    "license_source": "https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct/blob/0c351dd01ed87e9c1b53cbc748cba10e6187ff3b/LICENSE",
+    "readme_source": "https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct/blob/0c351dd01ed87e9c1b53cbc748cba10e6187ff3b/README.md",
+    "configuration_source": "https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct/blob/0c351dd01ed87e9c1b53cbc748cba10e6187ff3b/config.json",
+    "LICENSE_status": "HTTPError: HTTP Error 404: Not Found",
+    "config.json_http": 200,
+    "config.json_sha256": "5cd452860dc1e9c29dd71cc3cef7f39b338b7a40793f7a260655c2d3568f3661",
+    "architecture": [
+      "Qwen3VLForConditionalGeneration"
+    ],
+    "model_type": "qwen3_vl",
+    "language_model_type": "qwen3_vl_text",
+    "vision_model_type": "qwen3_vl"
+  },
+  {
+    "model_id": "internvl35_8b",
+    "revision": "9bb6a56ad9cc69db95e2d4eeb15a52bbcac4ef79",
+    "checkpoint_url": "https://huggingface.co/OpenGVLab/InternVL3_5-8B/tree/9bb6a56ad9cc69db95e2d4eeb15a52bbcac4ef79",
+    "license_source": "https://huggingface.co/OpenGVLab/InternVL3_5-8B/blob/9bb6a56ad9cc69db95e2d4eeb15a52bbcac4ef79/LICENSE",
+    "readme_source": "https://huggingface.co/OpenGVLab/InternVL3_5-8B/blob/9bb6a56ad9cc69db95e2d4eeb15a52bbcac4ef79/README.md",
+    "configuration_source": "https://huggingface.co/OpenGVLab/InternVL3_5-8B/blob/9bb6a56ad9cc69db95e2d4eeb15a52bbcac4ef79/config.json",
+    "LICENSE_status": "HTTPError: HTTP Error 404: Not Found",
+    "config.json_http": 200,
+    "config.json_sha256": "e849152d81a9eb158475d493d6c5ba1fc935d35ed01429bbd0182582416bb963",
+    "architecture": [
+      "InternVLChatModel"
+    ],
+    "model_type": "internvl_chat",
+    "language_model_type": "qwen3",
+    "vision_model_type": "intern_vit_6b"
+  },
+  {
+    "model_id": "mantis_siglip_llama3_8b",
+    "revision": "28cc1fd9bccdce2c4276a9a784c54dcc58836881",
+    "checkpoint_url": "https://huggingface.co/TIGER-Lab/Mantis-8B-siglip-llama3/tree/28cc1fd9bccdce2c4276a9a784c54dcc58836881",
+    "license_source": "https://huggingface.co/TIGER-Lab/Mantis-8B-siglip-llama3/blob/28cc1fd9bccdce2c4276a9a784c54dcc58836881/LICENSE",
+    "readme_source": "https://huggingface.co/TIGER-Lab/Mantis-8B-siglip-llama3/blob/28cc1fd9bccdce2c4276a9a784c54dcc58836881/README.md",
+    "configuration_source": "https://huggingface.co/TIGER-Lab/Mantis-8B-siglip-llama3/blob/28cc1fd9bccdce2c4276a9a784c54dcc58836881/config.json",
+    "LICENSE_status": "HTTPError: HTTP Error 404: Not Found",
+    "config.json_http": 200,
+    "config.json_sha256": "df4603d4884af31cefd652382d55a5bdba4b91c5333b950cfc50576c77c77821",
+    "architecture": [
+      "LlavaForConditionalGeneration"
+    ],
+    "model_type": "llava",
+    "language_model_type": "llama",
+    "vision_model_type": "siglip_vision_model"
+  },
+  {
+    "model_id": "idefics2_8b",
+    "revision": "2c42686c57fe21cf0348c9ce1077d094b72e7698",
+    "checkpoint_url": "https://huggingface.co/HuggingFaceM4/idefics2-8b/tree/2c42686c57fe21cf0348c9ce1077d094b72e7698",
+    "license_source": "https://huggingface.co/HuggingFaceM4/idefics2-8b/blob/2c42686c57fe21cf0348c9ce1077d094b72e7698/LICENSE",
+    "readme_source": "https://huggingface.co/HuggingFaceM4/idefics2-8b/blob/2c42686c57fe21cf0348c9ce1077d094b72e7698/README.md",
+    "configuration_source": "https://huggingface.co/HuggingFaceM4/idefics2-8b/blob/2c42686c57fe21cf0348c9ce1077d094b72e7698/config.json",
+    "LICENSE_status": "HTTPError: HTTP Error 404: Not Found",
+    "config.json_http": 200,
+    "config.json_sha256": "df8f8adf37fdaf5f4f8f5a7b0ee6bc1749afe53c0d9dd869b2867fac45e0af01",
+    "architecture": [
+      "Idefics2ForConditionalGeneration"
+    ],
+    "model_type": "idefics2",
+    "language_model_type": "mistral",
+    "vision_model_type": "idefics2"
+  },
+  {
+    "model_id": "qwen25_vl_7b",
+    "revision": "cc594898137f460bfe9f0759e9844b3ce807cfb5",
+    "checkpoint_url": "https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct/tree/cc594898137f460bfe9f0759e9844b3ce807cfb5",
+    "license_source": "https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct/blob/cc594898137f460bfe9f0759e9844b3ce807cfb5/LICENSE",
+    "readme_source": "https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct/blob/cc594898137f460bfe9f0759e9844b3ce807cfb5/README.md",
+    "configuration_source": "https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct/blob/cc594898137f460bfe9f0759e9844b3ce807cfb5/config.json",
+    "LICENSE_status": "HTTPError: HTTP Error 404: Not Found",
+    "config.json_http": 200,
+    "config.json_sha256": "77d9ec7321cc572e3579e2c84799c9cadaded63c49ce93b101733349fc330c43",
+    "architecture": [
+      "Qwen2_5_VLForConditionalGeneration"
+    ],
+    "model_type": "qwen2_5_vl",
+    "language_model_type": null,
+    "vision_model_type": null
+  }
+]

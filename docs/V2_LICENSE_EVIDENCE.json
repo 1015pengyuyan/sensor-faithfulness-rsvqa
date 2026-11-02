@@ -1,0 +1,214 @@
+{
+  "checked_on": "2026-11-02",
+  "not_a_new_license_grant": true,
+  "result_release_remains_draft": true,
+  "attachment_manifest": [
+    {
+      "name": "01_main_predictions_fixtures.zip",
+      "bytes": 42973701,
+      "sha256": "6cffbb1033c2997fbb999258f5520ebb660730684d36614413420be2e56ccc1e",
+      "files": 55,
+      "scope": [
+        "main",
+        "fixtures"
+      ]
+    },
+    {
+      "name": "02_statistics_cached_draws.zip",
+      "bytes": 121176546,
+      "sha256": "56849563ba2276ac6f8397673a0d068d1eb458092e8ecf2757eeb2ef8c1330a0",
+      "files": 103,
+      "scope": [
+        "analysis",
+        "robustness"
+      ]
+    },
+    {
+      "name": "03_position_correction.zip",
+      "bytes": 13541168,
+      "sha256": "1e0504f328ce770105c11355a545df0d9a484e6b320f2d22cf873e2d2b7044cd",
+      "files": 48,
+      "scope": [
+        "position",
+        "position_analysis",
+        "position_closeout"
+      ]
+    },
+    {
+      "name": "04_figure_source_data.zip",
+      "bytes": 2423052,
+      "sha256": "5b2187e162056719626c607356518efc269d3b9c31def7e03539f844648b4ab9",
+      "files": 65,
+      "scope": [
+        "figures"
+      ]
+    },
+    {
+      "name": "05_cpu_reproduction_checks.zip",
+      "bytes": 127803,
+      "sha256": "8ba080404a77ab0d3155a8475d2c814c37983a41cd21d6060d4a9ad37e67e1f1",
+      "files": 13,
+      "scope": [
+        "CPU reproduction and public-export checks"
+      ]
+    }
+  ],
+  "zip_members_including_repeated_manifests": 293,
+  "official_source_checks": [
+    {
+      "source": "m4_pinned_card",
+      "url": "https://huggingface.co/datasets/wchao0601/m4-sar/resolve/e1609a2c7d2cacda10d4ad1e895df9627f37c236/README.md",
+      "http_status": 200,
+      "bytes": 1052,
+      "sha256": "8705f3816a260e90e77021b1588f4d574d71af41c54f6f1580f7f0351255240a",
+      "license_lines": [
+        "license: cc-by-4.0"
+      ]
+    },
+    {
+      "source": "ben_txt_pinned_card",
+      "url": "https://huggingface.co/datasets/BIFOLD-BigEarthNetv2-0/BigEarthNet.txt/resolve/72d865f2146f0a85b720f7f3ca1cdbaeafc3d316/README.md",
+      "http_status": 200,
+      "bytes": 9760,
+      "sha256": "e05e5d5d59e34429b6a3efca494221db1044d99faa8c5aec48d0ffaf99654589",
+      "license_lines": [
+        "license: cdla-permissive-1.0",
+        "        <img alt=\"Community Data License Agreement - Permissive - Version 1.0 License Badge\" src=\"https://img.shields.io/badge/License-CDLA%201.0-blue.svg\">"
+      ]
+    },
+    {
+      "source": "qwen3b_pinned_license",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct/resolve/66285546d2b821cf421d4f5eb2576359d3770cd3/LICENSE",
+      "http_status": 200,
+      "bytes": 7387,
+      "sha256": "b5c0e5cf74cf51af1ecbc4af597cfcd13fd9925611838884a681070838a14a50"
+    },
+    {
+      "source": "mantis_pinned_card",
+      "url": "https://huggingface.co/TIGER-Lab/Mantis-8B-siglip-llama3/resolve/28cc1fd9bccdce2c4276a9a784c54dcc58836881/README.md",
+      "http_status": 200,
+      "bytes": 7873,
+      "sha256": "edee0c1b44db13b6ca74da4bd5a2c4c3d3c8d6eb4d711357d0bedb3c1271878d",
+      "license_lines": [
+        "license: llama3"
+      ]
+    },
+    {
+      "source": "meta_llama3_license",
+      "url": "https://raw.githubusercontent.com/meta-llama/llama3/main/LICENSE",
+      "http_status": 200,
+      "bytes": 12403,
+      "sha256": "4fa551d4f938f68b8c1e6afa9d28befb70e3f33f75d0753248d530364aeea40f"
+    },
+    {
+      "source": "ben_official_record",
+      "url": "https://zenodo.org/api/records/10891137",
+      "http_status": 200,
+      "bytes": 9198,
+      "sha256": "40857ebfe2865b45aef47d7cf0a1075da9bad1deda22db681e5c707aca2742a1",
+      "license_record": {
+        "id": "cdla-permissive-1.0"
+      }
+    },
+    {
+      "source": "cc_by_4",
+      "url": "https://creativecommons.org/licenses/by/4.0/legalcode.en",
+      "http_status": 200,
+      "bytes": 48742,
+      "sha256": "58230517b7895aa219ff46a6ed63e67057a1582fb9ea054b16728a8c13525650"
+    },
+    {
+      "source": "cdla_permissive_1",
+      "url": "https://cdla.dev/permissive-1-0/",
+      "http_status": 200,
+      "bytes": 155132,
+      "sha256": "321f0664590b1f7af60868c8e9709c01a79a27d4a48b84604ee824197d6bcda0"
+    }
+  ],
+  "embedded_font_observations": [
+    {
+      "file": "figures/fig2_capability.pdf",
+      "font": "ELUGPM+ArialMT",
+      "extension": "ttf",
+      "kind": "Type0",
+      "embedded": true,
+      "embedding_fsType": 8
+    },
+    {
+      "file": "figures/fig2_capability.pdf",
+      "font": "ELUGPM+Arial-BoldMT",
+      "extension": "ttf",
+      "kind": "Type0",
+      "embedded": true,
+      "embedding_fsType": 8
+    },
+    {
+      "file": "figures/fig3_conflict.pdf",
+      "font": "ELUGPM+ArialMT",
+      "extension": "ttf",
+      "kind": "Type0",
+      "embedded": true,
+      "embedding_fsType": 8
+    },
+    {
+      "file": "figures/fig3_conflict.pdf",
+      "font": "ELUGPM+Arial-BoldMT",
+      "extension": "ttf",
+      "kind": "Type0",
+      "embedded": true,
+      "embedding_fsType": 8
+    },
+    {
+      "file": "figures/fig4_position.pdf",
+      "font": "ELUGPM+ArialMT",
+      "extension": "ttf",
+      "kind": "Type0",
+      "embedded": true,
+      "embedding_fsType": 8
+    },
+    {
+      "file": "figures/fig4_position.pdf",
+      "font": "ELUGPM+Arial-BoldMT",
+      "extension": "ttf",
+      "kind": "Type0",
+      "embedded": true,
+      "embedding_fsType": 8
+    }
+  ],
+  "svg_font_payload_observations": [
+    {
+      "file": "figures/fig2_capability.svg",
+      "font_payload_present": false
+    },
+    {
+      "file": "figures/fig3_conflict.svg",
+      "font_payload_present": false
+    },
+    {
+      "file": "figures/fig4_position.svg",
+      "font_payload_present": false
+    }
+  ],
+  "not_distributed": {
+    "model_weights": true,
+    "original_sensor_image_bytes": true,
+    "upstream_modeling_implementations": true,
+    "wheels": true,
+    "standalone_fonts": true
+  },
+  "font_policy_sources": [
+    "https://learn.microsoft.com/en-us/typography/fonts/font-faq#document-embedding",
+    "https://learn.microsoft.com/en-us/typography/opentype/spec/os2#fstype"
+  ],
+  "evidence_limits": [
+    "Dataset-card declarations are not a full upstream image-rights chain.",
+    "Font embedding flags are not proof of lawful acquisition.",
+    "Model-card Apache declarations do not establish an unrestricted output license.",
+    "No new GPU environment or complete historical transitive lock was created."
+  ],
+  "owner_decision_required": [
+    "Project-owned result/figure/report license",
+    "Project-authored fixture contribution grant scope",
+    "Per-model answer reuse notice and lawful font-source confirmation"
+  ]
+}

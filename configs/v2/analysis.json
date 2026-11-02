@@ -1,0 +1,30 @@
+{
+  "version": "eight_model_cpu_analysis_20261026_v1",
+  "matrix_version": "unified_128_eight_model_20261018_v1",
+  "completion_ledger": "main/STAGES.json",
+  "matrix_root": "--data: extracted release root",
+  "parser_path": "reproduction/v2/native/cross_sensor_eval.py",
+  "parser_sha256": "fff59cba3bffe9e1e88edeaf778197c9482e2f170d270e2dca450177d2cdbadc",
+  "scientific_inclusion_policy": "docs/V2_SCIENTIFIC_INCLUSION_POLICY.md",
+  "bootstrap": {
+    "resamples": 10000,
+    "seed": 20261016,
+    "sampling": "Python random.Random(seed).choice(sorted_source_ids), N choices in each of 10000 draws; same source multiplicity matrix for all eight models within each dataset/cohort",
+    "unit": "physical target source; all questions, directions, conditions and positions travel together",
+    "cohorts": "M4 full420; BEN primary282; BEN exclusion275; seed reset for each cohort",
+    "interval": "pointwise 95% percentile, numpy quantile method=linear (type7); no multiplicity adjustment",
+    "invalid_denominator": "save invalid draws as NaN; report valid and invalid counts; quantile uses valid draws only; no redraw or replacement",
+    "point_weighting": "question-direction weighted; three opposite replicates averaged within each target-question/direction/position before conditional pooling"
+  },
+  "primary_ranking": "A0 balanced accuracy in fixed full population; M4 slot1; BEN optical-slot1/SAR-slot2; EarthMind native named branch; descriptive descending point estimate separately by dataset",
+  "failure_scoring": "abstain and parser failure incorrect for accuracy; retain all fixed denominator rows; CIFR/RSR use frozen A0-correct eligibility; neither parser failure nor abstain is counted as directed reverse answer",
+  "second_congruent": "same original A0-correct question/direction/position, on frozen subset: opposite reverse mean minus second-congruent reverse event; do not condition on second-congruent correctness",
+  "position_interaction": "slot2-slot1 on corresponding joint A0-correct targets; interaction (SAR slot2-slot1)-(optical slot2-slot1) on all-four joint A0-correct targets; D uses second-congruent subset",
+  "pairwise": "all 28 model pairs for fixed-population A0 balanced accuracy and pooled conflict accuracy; same source draws; no strict cross-model CIFR ranking",
+  "stratification": "class/gold stratified diagnostics are exploratory as specified in the retrospective control freeze; all classes/labels retained",
+  "earthmind": "no generic position, single-image or text-only controls; mark unavailable",
+  "llava": "original prompt only; separately recorded scientific inclusion policy; original smoke FAIL and NOT_ADMITTED unchanged; new-format compatibility excluded",
+  "bounds": "fixed distractor allocation; historical exposure; parent-scene/geographic independence not established; no cross-dataset pooled score",
+  "new_posthoc_endpoints": [],
+  "original_config_sha256": "5973c202df2e34ec0bb454c6039971a6919aeafc58da49d65623cba9e6870867"
+}

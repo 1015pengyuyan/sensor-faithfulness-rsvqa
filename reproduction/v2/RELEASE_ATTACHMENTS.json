@@ -1,0 +1,51 @@
+[
+  {
+    "name": "01_main_predictions_fixtures.zip",
+    "bytes": 42973701,
+    "sha256": "6cffbb1033c2997fbb999258f5520ebb660730684d36614413420be2e56ccc1e",
+    "files": 55,
+    "scope": [
+      "main",
+      "fixtures"
+    ]
+  },
+  {
+    "name": "02_statistics_cached_draws.zip",
+    "bytes": 121176546,
+    "sha256": "56849563ba2276ac6f8397673a0d068d1eb458092e8ecf2757eeb2ef8c1330a0",
+    "files": 103,
+    "scope": [
+      "analysis",
+      "robustness"
+    ]
+  },
+  {
+    "name": "03_position_correction.zip",
+    "bytes": 13541168,
+    "sha256": "1e0504f328ce770105c11355a545df0d9a484e6b320f2d22cf873e2d2b7044cd",
+    "files": 48,
+    "scope": [
+      "position",
+      "position_analysis",
+      "position_closeout"
+    ]
+  },
+  {
+    "name": "04_figure_source_data.zip",
+    "bytes": 2423052,
+    "sha256": "5b2187e162056719626c607356518efc269d3b9c31def7e03539f844648b4ab9",
+    "files": 65,
+    "scope": [
+      "figures"
+    ]
+  },
+  {
+    "name": "05_cpu_reproduction_checks.zip",
+    "bytes": 127803,
+    "sha256": "8ba080404a77ab0d3155a8475d2c814c37983a41cd21d6060d4a9ad37e67e1f1",
+    "files": 13,
+    "scope": [
+      "CPU reproduction and public-export checks"
+    ]
+  }
+]
