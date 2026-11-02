@@ -16,11 +16,16 @@ Qwen2.5-VL-3B and Qwen2.5-VL-7B do not share identical checkpoint license terms.
 | Model outputs and derived statistics | Draft v2 attachments | Repository-generated research evidence; retain model/data source attribution and applicable upstream terms |
 | Manuscript PDF | Not included | Author metadata pending; no guessed authors, DOI, journal or publication claim |
 
-The draft record is prepared for owner review only. It is not yet a public
-extension release. Historical public assets remain at `v1.0.1-paper` unchanged.
+Code and documentation are public on `main`. The five result attachments remain
+an unpublished draft; the complete extension result release is not public.
+Historical public assets remain at `v1.0.1-paper` unchanged.
 Author information and any final dataset-output licensing choice should be
 confirmed before publication; do not treat the code license as a blanket grant
 over third-party-origin metadata or checkpoint-generated outputs.
+
+The [attachment license matrix](V2_ATTACHMENT_LICENSE_MATRIX.md) records actual
+distributed materials, separate non-distributed upstream assets, and the specific
+owner decisions still needed. No new attachment-wide license has been selected.
 
 ## Public export rules
 

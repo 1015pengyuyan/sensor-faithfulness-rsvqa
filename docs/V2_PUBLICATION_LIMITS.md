@@ -1,12 +1,14 @@
-# Review before publishing the draft
+# Review before publishing the result attachments
 
-This is a review branch plus draft attachments, not a merged or published release.
-Do not update manuscript availability claims until a public version actually exists.
+Code and documentation are public on `main`; the five result attachments remain
+an unpublished draft. Code integration is not publication of the complete results.
+Do not describe the result attachments as public or update the manuscript's
+complete-result availability claim before their actual release.
 
 Confirmed boundaries:
 
 - No final author/venue/DOI metadata and no author-placeholder manuscript PDF.
-- No weights, image bytes, third-party modeling implementation, protected allocation
+- No weights, third-party sensor-image bytes, third-party modeling implementation, protected allocation
   contents, internal request drafts, credentials or connection instructions.
 - The clean CPU path verifies saved evidence. It does not certify a newly installed
   GPU host or independently revalidate image bytes that are deliberately absent.
@@ -25,3 +27,5 @@ Confirmed boundaries:
 Owner review should confirm the final citation metadata and any explicit license
 for derived research outputs. The Apache-2.0 code license does not relabel upstream
 datasets or checkpoints. Historical tags must remain unchanged.
+See [the attachment license matrix](V2_ATTACHMENT_LICENSE_MATRIX.md) for the
+specific unresolved grants and the separate inventory of embedded document fonts.

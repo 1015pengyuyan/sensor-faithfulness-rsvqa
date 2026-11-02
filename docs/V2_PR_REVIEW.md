@@ -1,8 +1,9 @@
-## Scope
+## Original PR preparation scope (historical record)
 
 Prepare the V14.1 eight-checkpoint, two-dataset reproduction materials for owner
-review. No new inference or scientific resampling, manuscript edits, server/GPU
-operations, scheduler changes, merge or formal publication.
+review. The initial preparation did not authorize inference, scientific resampling,
+manuscript/server/scheduler changes, merge or formal publication. Code integration
+was separately authorized on 2026-11-02; the result attachments remain draft.
 
 ## Included
 
@@ -37,5 +38,6 @@ The local connection file is preserved and ignored. The historical v1.0.1-paper
 tag is unchanged. Author/citation metadata and some upstream standalone-license
 texts remain unresolved as listed in `docs/V2_PUBLICATION_LIMITS.md`.
 
-Please review this PR and the draft assets before merging/publishing. Extension
-materials must not be described in the manuscript as public until actually released.
+Current access status: code and documentation are public on `main`; draft result
+attachments still require owner review before publication. Do not describe the
+complete result materials in the manuscript as public until actually released.

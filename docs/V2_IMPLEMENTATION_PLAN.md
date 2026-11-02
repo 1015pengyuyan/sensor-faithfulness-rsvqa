@@ -1,6 +1,9 @@
-# V2 reproduction update
+# V2 reproduction preparation plan (historical record)
 
-Scope approved by the repository owner: a review branch and draft release only.
+Original preparation scope: a review branch and draft release only. The owner
+separately authorized code integration on 2026-11-02. Code and documentation are
+public on `main`; result-attachment publication remains unauthorized. The steps
+below record the completed preparation, not the current access status.
 The historical `v1.0.1-paper` tag, predictions, statistical archives, and paper
 remain unchanged. No inference, new random draws, server changes, or publication.
 

@@ -9,8 +9,12 @@ replacement sensitivity. Low reversal rates alone are not faithfulness evidence.
 
 ## Versions and access
 
-This review branch prepares **v2.0.0-eight-model**, a draft release pending owner
-review—not yet a public extension record. The public
+The eight-model reproduction **code and documentation are public on
+[main](https://github.com/1015pengyuyan/sensor-faithfulness-rsvqa/tree/main)**.
+The five result attachments for **v2.0.0-eight-model remain an unpublished
+draft**; the complete result release is not yet publicly available and no formal
+v2 Git tag has been created. Code access does not imply result-attachment access.
+The public
 [v1.0.1-paper](https://github.com/1015pengyuyan/sensor-faithfulness-rsvqa/releases/tag/v1.0.1-paper)
 is the unchanged historical reproduction version, not the eight-model extension.
 No final-author manuscript PDF or invented citation metadata are supplied.
@@ -18,6 +22,8 @@ No final-author manuscript PDF or invented citation metadata are supplied.
 Start with [v2 reproduction](docs/V2_REPRODUCTION.md),
 [data and licensing](docs/V2_DATA_AND_LICENSES.md), and
 [full revisions and environments](configs/v2/models.json).
+The [attachment license matrix](docs/V2_ATTACHMENT_LICENSE_MATRIX.md) separates
+existing code terms from the result licenses still awaiting owner decisions.
 
 ## Eight checkpoints
 

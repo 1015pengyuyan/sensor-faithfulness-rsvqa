@@ -2,14 +2,17 @@
 
 ## Status and layout
 
-This branch prepares the V14.1 evidence for review. `v2.0.0-eight-model` is a
-**draft release**, not an assertion that extension assets are publicly accessible.
+The V14.1 reproduction code and documentation are public on `main`.
+The five `v2.0.0-eight-model` result attachments remain an **unpublished draft**,
+not a publicly accessible complete result release. No formal v2 Git tag is created.
 The historical [v1.0.1-paper](https://github.com/1015pengyuyan/sensor-faithfulness-rsvqa/releases/tag/v1.0.1-paper)
 reproduces the earlier study only; it does not cover the eight-model extension.
 The unversioned legacy `scripts/`, `configs/`, `fixtures/` and `results/paper_summary/`
 are preserved historical assets. Use `reproduction/v2/` and `configs/v2/` for this update.
 
-Unzip the four draft attachments into the **same**, initially empty directory:
+Once the owner grants access or publishes them, unzip evidence attachments 01–04
+into the **same**, initially empty directory; attachment 05 contains validation
+receipts. The commands below require those files and do not imply public access:
 
 ```text
 reproduction_data/
