@@ -15,13 +15,13 @@ methodological boundaries. Begin with [v3 reproduction](docs/V3_REPRODUCTION.md)
 [evidence and limitations](docs/V3_EVIDENCE_AND_LIMITS.md), and
 [data and licensing](docs/V3_DATA_AND_LICENSES.md).
 
-The v3 normalized-evidence attachment is **prepared locally, not yet uploaded or
-publicly released**. Its [prepared identity](reproduction/v3/RELEASE_ATTACHMENTS.json)
-is supplied for the later release; a planned URL is not a current download link.
-The new source and documentation are public, while full v3 CPU replay requires
-the separately released evidence. See [release status](docs/V3_RELEASE_READINESS.md).
-No author-placeholder
-manuscript PDF or unselected figure variant is part of this update.
+The normalized evidence is distributed separately from Git through
+[v3.0.0-eleven-model](https://github.com/1015pengyuyan/sensor-faithfulness-rsvqa/releases/tag/v3.0.0-eleven-model).
+Download the evidence ZIP and `SHA256SUMS.txt`, then verify its identity against
+the [attachment manifest](reproduction/v3/RELEASE_ATTACHMENTS.json) before CPU replay.
+See [release scope and verification](docs/V3_RELEASE_READINESS.md) for the
+reproduction boundary. No author-placeholder manuscript PDF or unselected figure
+variant is part of this update.
 
 The published
 [v2.0.0-eight-model](https://github.com/1015pengyuyan/sensor-faithfulness-rsvqa/releases/tag/v2.0.0-eight-model)
