@@ -1,6 +1,6 @@
 # V3 release scope and verification
 
-Release scope: eleven-model code, exact identity/configuration metadata and a
+Prepared scope: eleven-model code, exact identity/configuration metadata and a
 separate normalized-evidence attachment. Existing v1/v2 code, tags and assets
 remain historical records. The published v2 release already has five assets; the
 old draft wording in the previous root README was stale.
@@ -17,14 +17,17 @@ old draft wording in the previous root README was stale.
 - No new inference, random draws, image/weight uploads or scientific outputs in
   Git. No current official figure appearance is changed by this update.
 
-## Evidence distribution
+## Evidence publication status
 
-The evidence attachment is distributed outside Git at
-[v3.0.0-eleven-model](https://github.com/1015pengyuyan/sensor-faithfulness-rsvqa/releases/tag/v3.0.0-eleven-model).
-The [attachment manifest](../reproduction/v3/RELEASE_ATTACHMENTS.json) pins its
-4,699,373 bytes and SHA-256. Release verification checks an anonymous download
-against that identity; local CPU replay checks the extracted scientific payloads
-against a separate source lock. No final-author manuscript PDF is supplied.
+The v3 evidence attachment is prepared locally and **has not been uploaded or
+publicly released**. Publication awaits explicit confirmation of the specific
+package scope. Source availability alone does not establish attachment access.
+The [prepared manifest](../reproduction/v3/RELEASE_ATTACHMENTS.json) pins its
+4,699,373 bytes and SHA-256; URLs in that manifest are planned destinations.
+
+Before a later release is described as public, its anonymous download must be
+checked against that identity. Local CPU replay checks extracted scientific
+payloads against a separate source lock. No final-author manuscript PDF is supplied.
 
 The v3 main command verifies archived confidence-limit/supplement bytes and
 reconstructs main points; it does not regenerate confidence intervals or the
