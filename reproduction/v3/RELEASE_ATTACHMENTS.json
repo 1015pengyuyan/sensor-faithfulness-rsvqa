@@ -1,5 +1,7 @@
 {
   "version": "3.0.0",
+  "publication_status": "prepared_locally_not_uploaded_or_publicly_released",
+  "url_status": "planned_destinations_not_current_download_links",
   "release_tag": "v3.0.0-eleven-model",
   "release_url": "https://github.com/1015pengyuyan/sensor-faithfulness-rsvqa/releases/tag/v3.0.0-eleven-model",
   "scope": "Normalized eleven-model evidence; main points can be reconstructed; intervals remain archived and hash verified",
