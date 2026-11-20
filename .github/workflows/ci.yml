@@ -15,6 +15,7 @@ jobs:
       - run: pip install -e .
       - run: python -m unittest discover -s tests -p "test_core.py" -v
       - run: python -m unittest discover -s tests -p "test_public_v2.py" -v
+      - run: python -m unittest discover -s tests -p "test_public_v3.py" -v
       - run: python -m unittest discover -s tests -p "test_public_display.py" -v
       - run: python reproduction/v2/reproduce.py demo --out reproduced
       - run: python scripts/check_paper_consistency.py

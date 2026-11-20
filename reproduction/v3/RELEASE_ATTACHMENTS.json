@@ -1,0 +1,14 @@
+{
+  "version": "3.0.0",
+  "release_tag": "v3.0.0-eleven-model",
+  "release_url": "https://github.com/1015pengyuyan/sensor-faithfulness-rsvqa/releases/tag/v3.0.0-eleven-model",
+  "scope": "Normalized eleven-model evidence; main points can be reconstructed; intervals remain archived and hash verified",
+  "assets": [
+    {
+      "name": "v3_eleven_model_normalized_evidence.zip",
+      "bytes": 4699373,
+      "sha256": "99a36ae9d9e8b7af2eaf6050013878f480bcd22c6ddacfce4441b07bb294e5f2",
+      "url": "https://github.com/1015pengyuyan/sensor-faithfulness-rsvqa/releases/download/v3.0.0-eleven-model/v3_eleven_model_normalized_evidence.zip"
+    }
+  ]
+}

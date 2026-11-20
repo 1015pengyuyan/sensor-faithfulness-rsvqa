@@ -1,4 +1,4 @@
-# Rights scope for v2.0.0-eight-model
+# Rights scope for project-owned results (v2 and v3)
 
 Authorized by the repository owner on 2026-11-02, **only to the extent the project
 rights holders have authority to license the contributions**.
@@ -12,6 +12,10 @@ rights holders have authority to license the contributions**.
    Attribute the project as `sensor-faithfulness-rsvqa`, identify the version,
    link https://github.com/1015pengyuyan/sensor-faithfulness-rsvqa/releases/tag/v2.0.0-eight-model,
    and indicate changes. This attribution identifier is not a manuscript author list.
+   For the eleven-model update, identify v3 and its corresponding published
+   source/evidence record instead of attributing new materials to the v2 snapshot.
+   The same rights-held-only and field-specific boundaries apply; no additional
+   rights over model/service-generated content are asserted.
 3. Inherited M4 data fields retain CC BY 4.0 and their original source credit;
    inherited BEN data fields retain CDLA-Permissive-1.0, provider credit, and
    modification notices. Project authorization does not replace upstream rights.

@@ -1,0 +1,43 @@
+{
+  "version": "3.0.0",
+  "manuscript_snapshot": "eleven-model editorial v6, 2026-11-19",
+  "scientific_records": 195618,
+  "files": {
+    "NORMALIZED_SELECTED.jsonl": {
+      "sha256": "62d7860157b01024583fa8929ec30a2b298b9dcbf13b26948d79fb5aad232cf0",
+      "bytes": 119498957
+    },
+    "ENDPOINTS.csv": {
+      "sha256": "f77aad5d2206d8fc25a33c290daf31ea25d5d10e6fd68cf5d33062e18932867c",
+      "bytes": 1997852
+    },
+    "SUPPLEMENT_ENDPOINTS.csv": {
+      "sha256": "b2be52c610ef8273b1dbee77b54df6fc296bb2269a2df6aefe309392609e9da5",
+      "bytes": 351183
+    },
+    "COHORTS.csv": {
+      "sha256": "5af12185910d8a37ee193557ee5b16a838a8e37172a0b212b6a28f83af89e08c",
+      "bytes": 1611
+    },
+    "OUTCOMES.csv": {
+      "sha256": "8edf4567aa26bf621d3b7e7956f237c61a19ef6ab32a779134a372de5ee934b7",
+      "bytes": 364548
+    },
+    "COMPLETION_AUDIT.json": {
+      "sha256": "4f587278f41553a42eb6ebf30191ca3fc41a1a3b9362e010ed2f1fbbfec496a5",
+      "bytes": 3998
+    },
+    "MODELS.json": {
+      "sha256": "c06dcf30dfe571360dbda209f847e79b7b9c30b3991159a851dc8a6103f7ed99",
+      "bytes": 568
+    },
+    "CHECKPOINT_IDENTITIES.json": {
+      "sha256": "11184493255d1c3d7a5c67b37baa599bb53b66f507858b8bc14e7aaf66a219fa",
+      "bytes": 994
+    },
+    "SOURCE_EXCLUSION.json": {
+      "sha256": "ff25a65b715434cce202887a5bf067f3f97f4b7f47798efbd495fce5da71cee5",
+      "bytes": 404
+    }
+  }
+}
