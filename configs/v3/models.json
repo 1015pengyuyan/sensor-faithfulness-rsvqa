@@ -1,0 +1,163 @@
+{
+  "version": "3.0.0",
+  "models": [
+    {
+      "id": "qwen25_vl_3b",
+      "name": "Qwen2.5-VL-3B",
+      "access": "fixed_open_weights",
+      "checkpoint": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "revision": "66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "official_source": "https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct/tree/66285546d2b821cf421d4f5eb2576359d3770cd3",
+      "decoding": {
+        "do_sample": false,
+        "num_beams": 1,
+        "max_new_tokens": 128
+      },
+      "interface": "native ordered image interface",
+      "generation_config_scope": "archived configuration; this CPU release does not rerun inference"
+    },
+    {
+      "id": "mantis_siglip_llama3_8b",
+      "name": "Mantis-8B",
+      "access": "fixed_open_weights",
+      "checkpoint": "TIGER-Lab/Mantis-8B-siglip-llama3",
+      "revision": "28cc1fd9bccdce2c4276a9a784c54dcc58836881",
+      "official_source": "https://huggingface.co/TIGER-Lab/Mantis-8B-siglip-llama3/tree/28cc1fd9bccdce2c4276a9a784c54dcc58836881",
+      "decoding": {
+        "do_sample": false,
+        "num_beams": 1,
+        "max_new_tokens": 128
+      },
+      "interface": "native ordered image interface",
+      "generation_config_scope": "archived configuration; this CPU release does not rerun inference"
+    },
+    {
+      "id": "idefics2_8b",
+      "name": "Idefics2-8B",
+      "access": "fixed_open_weights",
+      "checkpoint": "HuggingFaceM4/idefics2-8b",
+      "revision": "2c42686c57fe21cf0348c9ce1077d094b72e7698",
+      "official_source": "https://huggingface.co/HuggingFaceM4/idefics2-8b/tree/2c42686c57fe21cf0348c9ce1077d094b72e7698",
+      "decoding": {
+        "do_sample": false,
+        "num_beams": 1,
+        "max_new_tokens": 128
+      },
+      "interface": "native ordered image interface",
+      "generation_config_scope": "archived configuration; this CPU release does not rerun inference"
+    },
+    {
+      "id": "earthmind_4b",
+      "name": "EarthMind-4B",
+      "access": "fixed_open_weights",
+      "checkpoint": "sy1998/EarthMind-4B",
+      "revision": "f17c66b01e540268f3862a540e84a3f7ee329cd3",
+      "official_source": "https://huggingface.co/sy1998/EarthMind-4B/tree/f17c66b01e540268f3862a540e84a3f7ee329cd3",
+      "decoding": {
+        "do_sample": false,
+        "num_beams": 1,
+        "max_new_tokens": 128
+      },
+      "interface": "named SAR/optical branches; single-image and position controls not applicable",
+      "generation_config_scope": "archived configuration; this CPU release does not rerun inference"
+    },
+    {
+      "id": "llava_onevision_7b",
+      "name": "LLaVA-OneVision-7B",
+      "access": "fixed_open_weights",
+      "checkpoint": "llava-hf/llava-onevision-qwen2-7b-ov-hf",
+      "revision": "0d50680527681998e456c7b78950205bedd8a068",
+      "official_source": "https://huggingface.co/llava-hf/llava-onevision-qwen2-7b-ov-hf/tree/0d50680527681998e456c7b78950205bedd8a068",
+      "decoding": {
+        "do_sample": false,
+        "num_beams": 1,
+        "max_new_tokens": 128
+      },
+      "interface": "native ordered image interface",
+      "generation_config_scope": "archived configuration; this CPU release does not rerun inference"
+    },
+    {
+      "id": "gemma",
+      "name": "Gemma 4 E4B-it",
+      "access": "fixed_open_weights",
+      "checkpoint": "google/gemma-4-E4B-it",
+      "revision": "4ecc2ba63bcac23ba4a767fc87025b1450f84c9c",
+      "official_source": "https://huggingface.co/google/gemma-4-E4B-it/tree/4ecc2ba63bcac23ba4a767fc87025b1450f84c9c",
+      "decoding": {
+        "do_sample": false,
+        "num_beams": 1,
+        "max_new_tokens": 128
+      },
+      "interface": "native ordered image interface",
+      "generation_config_scope": "archived configuration; this CPU release does not rerun inference"
+    },
+    {
+      "id": "minicpm",
+      "name": "MiniCPM-V 4.5",
+      "access": "fixed_open_weights",
+      "checkpoint": "openbmb/MiniCPM-V-4_5",
+      "revision": "14a2004908140699317e2109e90573c1e6323c36",
+      "official_source": "https://huggingface.co/openbmb/MiniCPM-V-4_5/tree/14a2004908140699317e2109e90573c1e6323c36",
+      "decoding": {
+        "do_sample": false,
+        "num_beams": 1,
+        "max_new_tokens": 128
+      },
+      "interface": "native ordered image interface",
+      "generation_config_scope": "archived configuration; this CPU release does not rerun inference"
+    },
+    {
+      "id": "glm41",
+      "name": "GLM-4.1V-9B-Base",
+      "access": "fixed_open_weights",
+      "checkpoint": "zai-org/GLM-4.1V-9B-Base",
+      "revision": "5e8d1942554a9277eabcf9e83211bbf9c86136ee",
+      "official_source": "https://huggingface.co/zai-org/GLM-4.1V-9B-Base/tree/5e8d1942554a9277eabcf9e83211bbf9c86136ee",
+      "decoding": {
+        "do_sample": false,
+        "num_beams": 1,
+        "max_new_tokens": 128
+      },
+      "interface": "native ordered image interface",
+      "generation_config_scope": "archived configuration; this CPU release does not rerun inference"
+    },
+    {
+      "id": "phi4",
+      "name": "Phi-4-multimodal",
+      "access": "fixed_open_weights",
+      "checkpoint": "microsoft/Phi-4-multimodal-instruct",
+      "revision": "93f923e1a7727d1c4f446756212d9d3e8fcc5d81",
+      "official_source": "https://huggingface.co/microsoft/Phi-4-multimodal-instruct/tree/93f923e1a7727d1c4f446756212d9d3e8fcc5d81",
+      "decoding": {
+        "do_sample": false,
+        "num_beams": 1,
+        "max_new_tokens": 128
+      },
+      "interface": "native ordered image interface",
+      "generation_config_scope": "archived configuration; this CPU release does not rerun inference"
+    },
+    {
+      "id": "luna",
+      "name": "GPT-6 Luna",
+      "access": "official Codex CLI",
+      "requested_model": "gpt-6-luna",
+      "requested_reasoning_effort": "none",
+      "server_checkpoint_independently_pinned": false,
+      "verified_128_token_ceiling": false
+    },
+    {
+      "id": "gemini",
+      "name": "Gemini 3.8 Flash",
+      "access": "official Antigravity CLI",
+      "requested_model": "gemini-3.8-flash-low",
+      "server_checkpoint_independently_pinned": false,
+      "verified_128_token_ceiling": false
+    }
+  ],
+  "historical_only_models": [
+    "qwen25_vl_7b",
+    "qwen3_vl_8b",
+    "internvl35_8b"
+  ],
+  "excluded_extension_identity": "GLM-4.6V-Flash is not GLM-4.1V-9B-Base and is not in the current eleven-model population"
+}

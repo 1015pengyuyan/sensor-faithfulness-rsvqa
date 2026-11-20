@@ -29,3 +29,29 @@ labels and imagery-origin content retain their own terms regardless of model ID.
 Source imagery and checkpoints are not bundled. These notices document the
 release's research provenance and verified conditions; they are not legal advice
 or a warranty clearing all possible third-party rights.
+
+## V3 eleven-model supplement (2026-11-20)
+
+The table above is preserved as the historical eight-model record. The current
+eleven-model matrix retains Qwen2.5-VL-3B, Mantis, Idefics2, EarthMind and
+LLaVA-OneVision; the three other v2 checkpoints remain historical. The following
+six configurations complete v3. Exact revisions/access settings are also in
+`configs/v3/models.json`. No checkpoint code, weights or client binaries are bundled.
+
+| V3 addition | Pinned source or recorded access configuration |
+|---|---|
+| Gemma 4 E4B-it | [google/gemma-4-E4B-it](https://huggingface.co/google/gemma-4-E4B-it/tree/4ecc2ba63bcac23ba4a767fc87025b1450f84c9c) |
+| MiniCPM-V 4.5 | [openbmb/MiniCPM-V-4_5](https://huggingface.co/openbmb/MiniCPM-V-4_5/tree/14a2004908140699317e2109e90573c1e6323c36) |
+| GLM-4.1V-9B-Base | [zai-org/GLM-4.1V-9B-Base](https://huggingface.co/zai-org/GLM-4.1V-9B-Base/tree/5e8d1942554a9277eabcf9e83211bbf9c86136ee); distinct from GLM-4.6V-Flash |
+| Phi-4-multimodal-instruct | [microsoft/Phi-4-multimodal-instruct](https://huggingface.co/microsoft/Phi-4-multimodal-instruct/tree/93f923e1a7727d1c4f446756212d9d3e8fcc5d81) |
+| GPT-6 Luna | Official Codex CLI; requested `gpt-6-luna`, reasoning effort `none` |
+| Gemini 3.8 Flash | Official Antigravity CLI; requested `gemini-3.8-flash-low` |
+
+The linked revisions identify archived provenance; no new general output-license
+conclusion is inferred from a weight/model-card label. The two service labels are
+client selections, not independently verified server checkpoint identities, and
+their runs have no verified 128-token hard ceiling. Applicable model/service
+agreements remain separate from the project's statistics license. This notice
+does not promise training/commercial reuse rights or impose a blanket eleven-model
+prohibition. Parsed answers and raw generated content remain outside the project's
+CC BY grant; source-derived fields retain their dataset terms.
